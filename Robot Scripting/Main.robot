@@ -1,4 +1,5 @@
-#Comment
+*** Settings ***
+Library    SeleniumLibrary
 
 *** Variables ***
 ${Name}    Srinath Kuppuswamy
