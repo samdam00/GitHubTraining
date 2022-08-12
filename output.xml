@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220812 19:23:51.814" rpa="false" schemaversion="3">
+<suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot Scripting/Main.robot">
+<test id="s1-t1" name="TC1" line="7">
+<kw name="Log" library="BuiltIn">
+<arg>${Name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220812 19:23:51.823" level="INFO">100</msg>
+<status status="PASS" starttime="20220812 19:23:51.823" endtime="20220812 19:23:51.823"/>
+</kw>
+<status status="PASS" starttime="20220812 19:23:51.823" endtime="20220812 19:23:51.823"/>
+</test>
+<status status="PASS" starttime="20220812 19:23:51.814" endtime="20220812 19:23:51.823"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
