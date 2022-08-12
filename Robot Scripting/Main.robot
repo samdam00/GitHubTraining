@@ -1,8 +1,10 @@
 #Comment
 
 *** Variables ***
-${Name}    100
+${Name}    Srinath Kuppuswamy
+${Age}    100
 
 *** Test Cases ***
 TC1
-    Log    ${Name}
+    Log   ${Name}
+    Log    ${Age}
