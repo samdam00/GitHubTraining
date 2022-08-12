@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220812 19:27:59.876" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220812 19:45:34.628" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot Scripting/Main.robot">
-<test id="s1-t1" name="TC1" line="8">
+<test id="s1-t1" name="TC1" line="9">
 <kw name="Log" library="BuiltIn">
 <arg>${Name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220812 19:27:59.888" level="INFO">Srinath Kuppuswamy</msg>
-<status status="PASS" starttime="20220812 19:27:59.887" endtime="20220812 19:27:59.888"/>
+<msg timestamp="20220812 19:45:34.638" level="INFO">Srinath Kuppuswamy</msg>
+<status status="PASS" starttime="20220812 19:45:34.638" endtime="20220812 19:45:34.638"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${Age}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220812 19:27:59.888" level="INFO">100</msg>
-<status status="PASS" starttime="20220812 19:27:59.888" endtime="20220812 19:27:59.888"/>
+<msg timestamp="20220812 19:45:34.638" level="INFO">100</msg>
+<status status="PASS" starttime="20220812 19:45:34.638" endtime="20220812 19:45:34.638"/>
 </kw>
-<status status="PASS" starttime="20220812 19:27:59.887" endtime="20220812 19:27:59.888"/>
+<kw name="Log" library="BuiltIn">
+<arg>${Mobile}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220812 19:45:34.638" level="INFO">9159348735</msg>
+<status status="PASS" starttime="20220812 19:45:34.638" endtime="20220812 19:45:34.638"/>
+</kw>
+<status status="PASS" starttime="20220812 19:45:34.637" endtime="20220812 19:45:34.638"/>
 </test>
-<status status="PASS" starttime="20220812 19:27:59.878" endtime="20220812 19:27:59.888"/>
+<status status="PASS" starttime="20220812 19:45:34.629" endtime="20220812 19:45:34.638"/>
 </suite>
 <statistics>
 <total>
