@@ -11,3 +11,4 @@ TC_1
     Log   ${Name}
     Log    ${Age}
     Log    ${Mobile}
+    Open Browser    http://www.ltts.com    googlechrome

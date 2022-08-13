@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220813 18:37:43.261" rpa="false" schemaversion="3">
+<suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot Scripting/Main.robot">
+<test id="s1-t1" name="TC_1" line="10">
+<kw name="Log" library="BuiltIn">
+<arg>${Name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220813 18:37:43.536" level="INFO">Srinath Kuppuswamy</msg>
+<status status="PASS" starttime="20220813 18:37:43.535" endtime="20220813 18:37:43.539"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Age}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220813 18:37:43.540" level="INFO">100</msg>
+<status status="PASS" starttime="20220813 18:37:43.539" endtime="20220813 18:37:43.540"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Mobile}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220813 18:37:43.541" level="INFO">9159348735</msg>
+<status status="PASS" starttime="20220813 18:37:43.541" endtime="20220813 18:37:43.541"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.ltts.com</arg>
+<arg>googlechrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220813 18:37:43.543" level="INFO">Opening browser 'googlechrome' to base url 'http://www.ltts.com'.</msg>
+<status status="PASS" starttime="20220813 18:37:43.542" endtime="20220813 18:37:47.713"/>
+</kw>
+<status status="PASS" starttime="20220813 18:37:43.534" endtime="20220813 18:37:47.714"/>
+</test>
+<status status="PASS" starttime="20220813 18:37:43.264" endtime="20220813 18:37:47.716"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
