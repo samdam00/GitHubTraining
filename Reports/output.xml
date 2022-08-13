@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220813 23:18:09.521" rpa="false" schemaversion="3">
+<suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot Scripting/Main.robot">
+<test id="s1-t1" name="TC_1" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220813 23:18:09.597" level="INFO">Opening browser 'googlechrome' to base url 'http://www.ltts.com'.</msg>
+<status status="PASS" starttime="20220813 23:18:09.597" endtime="20220813 23:18:13.195"/>
+</kw>
+<status status="PASS" starttime="20220813 23:18:09.597" endtime="20220813 23:18:13.196"/>
+</test>
+<status status="PASS" starttime="20220813 23:18:09.521" endtime="20220813 23:18:13.197"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
