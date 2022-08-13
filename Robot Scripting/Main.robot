@@ -7,7 +7,7 @@ ${Age}    100
 ${Mobile}    9159348735
 
 *** Test Cases ***
-TC1
+TC_1
     Log   ${Name}
     Log    ${Age}
     Log    ${Mobile}
