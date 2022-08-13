@@ -2,13 +2,9 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${Name}    Srinath Kuppuswamy
-${Age}    100
-${Mobile}    9159348735
+${url}    http://www.ltts.com
+${browser}    googlechrome
 
 *** Test Cases ***
 TC_1
-    Log   ${Name}
-    Log    ${Age}
-    Log    ${Mobile}
-    Open Browser    http://www.ltts.com    googlechrome
+    Open Browser    ${url}    ${browser}
