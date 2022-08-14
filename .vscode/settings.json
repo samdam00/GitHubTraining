@@ -1,2 +1,5 @@
 {
+    "window.zoomLevel": 1,
+    "window.title": "${activeEditorShort}${separator}MyProjectWithGit",
+    "workbench.sideBar.location": "right"
 }

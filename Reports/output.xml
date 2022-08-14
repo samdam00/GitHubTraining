@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220813 23:18:09.521" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220814 19:30:47.914" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot Scripting/Main.robot">
-<test id="s1-t1" name="TC_1" line="9">
+<test id="s1-t1" name="TC_1" line="14">
+<kw name="My Keyword">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220813 23:18:09.597" level="INFO">Opening browser 'googlechrome' to base url 'http://www.ltts.com'.</msg>
-<status status="PASS" starttime="20220813 23:18:09.597" endtime="20220813 23:18:13.195"/>
+<msg timestamp="20220814 19:30:47.991" level="INFO">Opening browser 'googlechrome' to base url 'http://www.ltts.com'.</msg>
+<status status="PASS" starttime="20220814 19:30:47.990" endtime="20220814 19:30:51.914"/>
 </kw>
-<status status="PASS" starttime="20220813 23:18:09.597" endtime="20220813 23:18:13.196"/>
+<status status="PASS" starttime="20220814 19:30:47.990" endtime="20220814 19:30:51.915"/>
+</kw>
+<status status="PASS" starttime="20220814 19:30:47.990" endtime="20220814 19:30:51.915"/>
 </test>
-<status status="PASS" starttime="20220813 23:18:09.521" endtime="20220813 23:18:13.197"/>
+<status status="PASS" starttime="20220814 19:30:47.915" endtime="20220814 19:30:51.916"/>
 </suite>
 <statistics>
 <total>
