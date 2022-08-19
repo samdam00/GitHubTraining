@@ -1,29 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220814 19:30:47.914" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220819 22:42:57.881" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot Scripting/Main.robot">
-<test id="s1-t1" name="TC_1" line="14">
-<kw name="My Keyword">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220814 19:30:47.991" level="INFO">Opening browser 'googlechrome' to base url 'http://www.ltts.com'.</msg>
-<status status="PASS" starttime="20220814 19:30:47.990" endtime="20220814 19:30:51.914"/>
+<test id="s1-t1" name="Test With Settings" line="29">
+<kw name="Log" library="BuiltIn">
+<arg>Hello, world!</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220819 22:42:57.943" level="INFO">Hello, world!</msg>
+<status status="PASS" starttime="20220819 22:42:57.943" endtime="20220819 22:42:57.943"/>
 </kw>
-<status status="PASS" starttime="20220814 19:30:47.990" endtime="20220814 19:30:51.915"/>
-</kw>
-<status status="PASS" starttime="20220814 19:30:47.990" endtime="20220814 19:30:51.915"/>
+<doc>Another dummy test</doc>
+<tag>dummy</tag>
+<tag>owner-johndoe</tag>
+<status status="PASS" starttime="20220819 22:42:57.942" endtime="20220819 22:42:57.943"/>
 </test>
-<status status="PASS" starttime="20220814 19:30:47.915" endtime="20220814 19:30:51.916"/>
+<test id="s1-t2" name="Test with Named arguments example" line="33">
+<kw name="Named arguments example">
+<arg>options=-lh</arg>
+<kw name="Log" library="BuiltIn">
+<arg>${options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220819 22:42:57.943" level="INFO">-lh</msg>
+<status status="PASS" starttime="20220819 22:42:57.943" endtime="20220819 22:42:57.944"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${path}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220819 22:42:57.944" level="INFO">.</msg>
+<status status="PASS" starttime="20220819 22:42:57.944" endtime="20220819 22:42:57.944"/>
+</kw>
+<status status="PASS" starttime="20220819 22:42:57.943" endtime="20220819 22:42:57.944"/>
+</kw>
+<kw name="Named arguments example">
+<arg>path=/tmp</arg>
+<arg>options=-l</arg>
+<kw name="Log" library="BuiltIn">
+<arg>${options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220819 22:42:57.944" level="INFO">-l</msg>
+<status status="PASS" starttime="20220819 22:42:57.944" endtime="20220819 22:42:57.944"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${path}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220819 22:42:57.944" level="INFO">/tmp</msg>
+<status status="PASS" starttime="20220819 22:42:57.944" endtime="20220819 22:42:57.944"/>
+</kw>
+<status status="PASS" starttime="20220819 22:42:57.944" endtime="20220819 22:42:57.944"/>
+</kw>
+<status status="PASS" starttime="20220819 22:42:57.943" endtime="20220819 22:42:57.944"/>
+</test>
+<test id="s1-t3" name="Test with Free Named Arguments" line="36">
+<kw name="Free Named Arguments">
+<arg>"Logging with Aruguments"</arg>
+<arg>INFO</arg>
+<arg>TRUE</arg>
+<arg>TRUE</arg>
+<arg>config=MacOS</arg>
+<kw name="Log" library="BuiltIn">
+<arg>@{args}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220819 22:42:57.945" level="INFO" html="true">"Logging with Aruguments"</msg>
+<status status="PASS" starttime="20220819 22:42:57.945" endtime="20220819 22:42:57.945"/>
+</kw>
+<status status="PASS" starttime="20220819 22:42:57.945" endtime="20220819 22:42:57.945"/>
+</kw>
+<status status="PASS" starttime="20220819 22:42:57.944" endtime="20220819 22:42:57.945"/>
+</test>
+<status status="PASS" starttime="20220819 22:42:57.882" endtime="20220819 22:42:57.945"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">dummy</stat>
+<stat pass="1" fail="0" skip="0">owner-johndoe</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Main">Main</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Main">Main</stat>
 </suite>
 </statistics>
 <errors>
