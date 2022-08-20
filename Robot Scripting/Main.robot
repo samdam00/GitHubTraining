@@ -2,8 +2,10 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${url}    http://www.ltts.com
-${browser}    googlechrome
+${SETUP}    Test Start
+${TEARDOWN}    Test End
+${HOST}    Srinaths-MacBook-Air.local
+${USER}    Srinath
 ${STRING}          This is a long string.
 ...                It has multiple sentences.
 ...                It does not have newlines.
@@ -23,18 +25,55 @@ Named arguments example
 Free Named Arguments
     [Arguments]    @{args}    ${config}=Darwin
     Log    @{args}
-    
+Test Start
+    Log    Starting test case
+Test End
+    Log    Starting test case
 
 *** Test Cases ***
-Test With Settings
-    [Documentation]    Another dummy test
-    [Tags]    dummy    owner-johndoe
-    Log    Hello, world!
+#Using Arguments in keyword
 Test with Named arguments example
     Named arguments example    options=-lh
     Named arguments example    path=/tmp    options=-l
 Test with Free Named Arguments
     Free Named Arguments   "Logging with Aruguments"    INFO    TRUE    TRUE    config=MacOS
+#Failures
+Normal Error
+    Fail    This is a rather boring example...
+
+HTML Error
+    ${number} =    Get Number
+    Should Be Equal    ${number}    42    *HTML* Number is not my <b>MAGIC</b> number.
+#Test case name and documentation
+Simple
+    [Documentation]    Simple documentation
+    No Operation
+
+Formatting
+    [Documentation]    *This is bold*, _this is italic_  and here is a link: http://robotframework.org
+    No Operation
+
+Variables
+    [Documentation]    Executed at ${HOST} by ${USER}
+    No Operation
+
+Splitting
+    [Documentation]    This documentation    is split    into multiple columns
+    No Operation
+
+Many lines
+    [Documentation]    Here we have
+    ...                an automatic newline
+    ...                added 
+    No Operation
+#Test setup and teardown
+Using variables
+    [Documentation]    Setup and teardown specified using variables
+    [Setup]    ${SETUP}
+     No Operation
+    [Teardown]    ${TEARDOWN}
+
+
     
 
     
