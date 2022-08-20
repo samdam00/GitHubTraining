@@ -1,5 +1,8 @@
 *** Settings ***
+Test Setup       Test Start
+Test Teardown    Test End
 Library    SeleniumLibrary
+Library    OperatingSystem
 
 *** Variables ***
 ${SETUP}    Test Start
@@ -70,7 +73,7 @@ Many lines
 Using variables
     [Documentation]    Setup and teardown specified using variables
     [Setup]    ${SETUP}
-     No Operation
+     Append To Environment Variable    PATH    ~/Documents/GitHubTraining 
     [Teardown]    ${TEARDOWN}
 
 
