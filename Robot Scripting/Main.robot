@@ -3,8 +3,12 @@ Test Setup       Test Start
 Test Teardown    Test End
 Library    SeleniumLibrary
 Library    OperatingSystem
+Library    Process
 
 *** Variables ***
+${NAME}         Robot Framework
+${VERSION}      5.0
+${ROBOT}        ${NAME} ${VERSION}
 ${SETUP}    Test Start
 ${TEARDOWN}    Test End
 ${HOST}    Srinaths-MacBook-Air.local
@@ -29,9 +33,9 @@ Free Named Arguments
     [Arguments]    @{args}    ${config}=Darwin
     Log    @{args}
 Test Start
-    Log    Starting test case
+    Log    ${ROBOT},Starting test case
 Test End
-    Log    Starting test case
+    Log   ${ROBOT},Ending test case
 
 *** Test Cases ***
 #Using Arguments in keyword
@@ -73,7 +77,8 @@ Many lines
 Using variables
     [Documentation]    Setup and teardown specified using variables
     [Setup]    ${SETUP}
-     Append To Environment Variable    PATH    ~/Documents/GitHubTraining 
+    Log    ${STRING}
+    Log    ${MULTILINE} 
     [Teardown]    ${TEARDOWN}
 
 
