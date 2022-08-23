@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220820 21:42:15.022" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.9 on darwin)" generated="20220821 20:41:20.330" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot Scripting/Main.robot">
 <test id="s1-t1" name="Test with Named arguments example" line="42">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.089" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.089" endtime="20220820 21:42:15.089"/>
+<msg timestamp="20220821 20:41:20.413" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.413" endtime="20220821 20:41:20.413"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.089" endtime="20220820 21:42:15.089"/>
+<status status="PASS" starttime="20220821 20:41:20.413" endtime="20220821 20:41:20.413"/>
 </kw>
 <kw name="Named arguments example">
 <arg>options=-lh</arg>
 <kw name="Log" library="BuiltIn">
 <arg>${options}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.089" level="INFO">-lh</msg>
-<status status="PASS" starttime="20220820 21:42:15.089" endtime="20220820 21:42:15.089"/>
+<msg timestamp="20220821 20:41:20.414" level="INFO">-lh</msg>
+<status status="PASS" starttime="20220821 20:41:20.414" endtime="20220821 20:41:20.414"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${path}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.089" level="INFO">.</msg>
-<status status="PASS" starttime="20220820 21:42:15.089" endtime="20220820 21:42:15.089"/>
+<msg timestamp="20220821 20:41:20.414" level="INFO">.</msg>
+<status status="PASS" starttime="20220821 20:41:20.414" endtime="20220821 20:41:20.414"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.089" endtime="20220820 21:42:15.089"/>
+<status status="PASS" starttime="20220821 20:41:20.413" endtime="20220821 20:41:20.414"/>
 </kw>
 <kw name="Named arguments example">
 <arg>path=/tmp</arg>
@@ -33,37 +33,37 @@
 <kw name="Log" library="BuiltIn">
 <arg>${options}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.090" level="INFO">-l</msg>
-<status status="PASS" starttime="20220820 21:42:15.090" endtime="20220820 21:42:15.090"/>
+<msg timestamp="20220821 20:41:20.414" level="INFO">-l</msg>
+<status status="PASS" starttime="20220821 20:41:20.414" endtime="20220821 20:41:20.414"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${path}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.090" level="INFO">/tmp</msg>
-<status status="PASS" starttime="20220820 21:42:15.090" endtime="20220820 21:42:15.090"/>
+<msg timestamp="20220821 20:41:20.414" level="INFO">/tmp</msg>
+<status status="PASS" starttime="20220821 20:41:20.414" endtime="20220821 20:41:20.414"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.089" endtime="20220820 21:42:15.090"/>
+<status status="PASS" starttime="20220821 20:41:20.414" endtime="20220821 20:41:20.414"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.090" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.090" endtime="20220820 21:42:15.090"/>
+<msg timestamp="20220821 20:41:20.415" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.414" endtime="20220821 20:41:20.415"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.090" endtime="20220820 21:42:15.090"/>
+<status status="PASS" starttime="20220821 20:41:20.414" endtime="20220821 20:41:20.415"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.088" endtime="20220820 21:42:15.090"/>
+<status status="PASS" starttime="20220821 20:41:20.413" endtime="20220821 20:41:20.415"/>
 </test>
 <test id="s1-t2" name="Test with Free Named Arguments" line="45">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.091" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.091" endtime="20220820 21:42:15.091"/>
+<msg timestamp="20220821 20:41:20.415" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.415" endtime="20220821 20:41:20.415"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.091" endtime="20220820 21:42:15.091"/>
+<status status="PASS" starttime="20220821 20:41:20.415" endtime="20220821 20:41:20.415"/>
 </kw>
 <kw name="Free Named Arguments">
 <arg>"Logging with Aruguments"</arg>
@@ -74,260 +74,321 @@
 <kw name="Log" library="BuiltIn">
 <arg>@{args}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.091" level="INFO" html="true">"Logging with Aruguments"</msg>
-<status status="PASS" starttime="20220820 21:42:15.091" endtime="20220820 21:42:15.091"/>
+<msg timestamp="20220821 20:41:20.416" level="INFO" html="true">"Logging with Aruguments"</msg>
+<status status="PASS" starttime="20220821 20:41:20.415" endtime="20220821 20:41:20.416"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.091" endtime="20220820 21:42:15.091"/>
+<status status="PASS" starttime="20220821 20:41:20.415" endtime="20220821 20:41:20.416"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.091" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.091" endtime="20220820 21:42:15.091"/>
+<msg timestamp="20220821 20:41:20.416" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.416" endtime="20220821 20:41:20.416"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.091" endtime="20220820 21:42:15.092"/>
+<status status="PASS" starttime="20220821 20:41:20.416" endtime="20220821 20:41:20.416"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.090" endtime="20220820 21:42:15.092"/>
+<status status="PASS" starttime="20220821 20:41:20.415" endtime="20220821 20:41:20.416"/>
 </test>
 <test id="s1-t3" name="Normal Error" line="48">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.092" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.092" endtime="20220820 21:42:15.092"/>
+<msg timestamp="20220821 20:41:20.417" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.416" endtime="20220821 20:41:20.417"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.092" endtime="20220820 21:42:15.092"/>
+<status status="PASS" starttime="20220821 20:41:20.416" endtime="20220821 20:41:20.417"/>
 </kw>
 <kw name="Fail" library="BuiltIn">
 <arg>This is a rather boring example...</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<msg timestamp="20220820 21:42:15.092" level="FAIL">This is a rather boring example...</msg>
-<status status="FAIL" starttime="20220820 21:42:15.092" endtime="20220820 21:42:15.093"/>
+<msg timestamp="20220821 20:41:20.417" level="FAIL">This is a rather boring example...</msg>
+<status status="FAIL" starttime="20220821 20:41:20.417" endtime="20220821 20:41:20.417"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.093" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.093" endtime="20220820 21:42:15.093"/>
+<msg timestamp="20220821 20:41:20.417" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.417" endtime="20220821 20:41:20.417"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.093" endtime="20220820 21:42:15.093"/>
+<status status="PASS" starttime="20220821 20:41:20.417" endtime="20220821 20:41:20.417"/>
 </kw>
-<status status="FAIL" starttime="20220820 21:42:15.092" endtime="20220820 21:42:15.093">This is a rather boring example...</status>
+<status status="FAIL" starttime="20220821 20:41:20.416" endtime="20220821 20:41:20.417">This is a rather boring example...</status>
 </test>
 <test id="s1-t4" name="HTML Error" line="51">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.094" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.094" endtime="20220820 21:42:15.094"/>
+<msg timestamp="20220821 20:41:20.418" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.418" endtime="20220821 20:41:20.418"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.093" endtime="20220820 21:42:15.094"/>
+<status status="PASS" starttime="20220821 20:41:20.418" endtime="20220821 20:41:20.418"/>
 </kw>
 <kw name="Get Number">
 <var>${number}</var>
-<msg timestamp="20220820 21:42:15.096" level="FAIL">No keyword with name 'Get Number' found.</msg>
-<status status="FAIL" starttime="20220820 21:42:15.096" endtime="20220820 21:42:15.096"/>
+<msg timestamp="20220821 20:41:20.420" level="FAIL">No keyword with name 'Get Number' found.</msg>
+<status status="FAIL" starttime="20220821 20:41:20.420" endtime="20220821 20:41:20.420"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${number}</arg>
 <arg>42</arg>
 <arg>*HTML* Number is not my &lt;b&gt;MAGIC&lt;/b&gt; number.</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="NOT RUN" starttime="20220820 21:42:15.096" endtime="20220820 21:42:15.096"/>
+<status status="NOT RUN" starttime="20220821 20:41:20.420" endtime="20220821 20:41:20.420"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.097" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.097" endtime="20220820 21:42:15.097"/>
+<msg timestamp="20220821 20:41:20.421" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.421" endtime="20220821 20:41:20.421"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.097" endtime="20220820 21:42:15.097"/>
+<status status="PASS" starttime="20220821 20:41:20.420" endtime="20220821 20:41:20.421"/>
 </kw>
-<status status="FAIL" starttime="20220820 21:42:15.093" endtime="20220820 21:42:15.097">No keyword with name 'Get Number' found.</status>
+<status status="FAIL" starttime="20220821 20:41:20.418" endtime="20220821 20:41:20.421">No keyword with name 'Get Number' found.</status>
 </test>
 <test id="s1-t5" name="Simple" line="55">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.098" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.097" endtime="20220820 21:42:15.098"/>
+<msg timestamp="20220821 20:41:20.421" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.421" endtime="20220821 20:41:20.421"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.097" endtime="20220820 21:42:15.098"/>
+<status status="PASS" starttime="20220821 20:41:20.421" endtime="20220821 20:41:20.421"/>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" starttime="20220820 21:42:15.098" endtime="20220820 21:42:15.098"/>
+<status status="PASS" starttime="20220821 20:41:20.421" endtime="20220821 20:41:20.421"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.098" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.098" endtime="20220820 21:42:15.098"/>
+<msg timestamp="20220821 20:41:20.422" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.422" endtime="20220821 20:41:20.422"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.098" endtime="20220820 21:42:15.098"/>
+<status status="PASS" starttime="20220821 20:41:20.421" endtime="20220821 20:41:20.422"/>
 </kw>
 <doc>Simple documentation</doc>
-<status status="PASS" starttime="20220820 21:42:15.097" endtime="20220820 21:42:15.098"/>
+<status status="PASS" starttime="20220821 20:41:20.421" endtime="20220821 20:41:20.422"/>
 </test>
 <test id="s1-t6" name="Formatting" line="59">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.099" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.099" endtime="20220820 21:42:15.099"/>
+<msg timestamp="20220821 20:41:20.422" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.422" endtime="20220821 20:41:20.422"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.099" endtime="20220820 21:42:15.099"/>
+<status status="PASS" starttime="20220821 20:41:20.422" endtime="20220821 20:41:20.422"/>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" starttime="20220820 21:42:15.099" endtime="20220820 21:42:15.099"/>
+<status status="PASS" starttime="20220821 20:41:20.423" endtime="20220821 20:41:20.423"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.099" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.099" endtime="20220820 21:42:15.099"/>
+<msg timestamp="20220821 20:41:20.423" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.423" endtime="20220821 20:41:20.423"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.099" endtime="20220820 21:42:15.099"/>
+<status status="PASS" starttime="20220821 20:41:20.423" endtime="20220821 20:41:20.423"/>
 </kw>
 <doc>*This is bold*, _this is italic_ and here is a link: http://robotframework.org</doc>
-<status status="PASS" starttime="20220820 21:42:15.098" endtime="20220820 21:42:15.099"/>
+<status status="PASS" starttime="20220821 20:41:20.422" endtime="20220821 20:41:20.423"/>
 </test>
 <test id="s1-t7" name="Variables" line="63">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.100" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.100" endtime="20220820 21:42:15.100"/>
+<msg timestamp="20220821 20:41:20.424" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.423" endtime="20220821 20:41:20.424"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.100" endtime="20220820 21:42:15.100"/>
+<status status="PASS" starttime="20220821 20:41:20.423" endtime="20220821 20:41:20.424"/>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" starttime="20220820 21:42:15.100" endtime="20220820 21:42:15.100"/>
+<status status="PASS" starttime="20220821 20:41:20.424" endtime="20220821 20:41:20.424"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.101" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.100" endtime="20220820 21:42:15.101"/>
+<msg timestamp="20220821 20:41:20.424" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.424" endtime="20220821 20:41:20.424"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.100" endtime="20220820 21:42:15.101"/>
+<status status="PASS" starttime="20220821 20:41:20.424" endtime="20220821 20:41:20.424"/>
 </kw>
 <doc>Executed at Srinaths-MacBook-Air.local by Srinath</doc>
-<status status="PASS" starttime="20220820 21:42:15.100" endtime="20220820 21:42:15.101"/>
+<status status="PASS" starttime="20220821 20:41:20.423" endtime="20220821 20:41:20.424"/>
 </test>
 <test id="s1-t8" name="Splitting" line="67">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.101" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.101" endtime="20220820 21:42:15.101"/>
+<msg timestamp="20220821 20:41:20.425" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.425" endtime="20220821 20:41:20.425"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.101" endtime="20220820 21:42:15.101"/>
+<status status="PASS" starttime="20220821 20:41:20.425" endtime="20220821 20:41:20.425"/>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" starttime="20220820 21:42:15.101" endtime="20220820 21:42:15.101"/>
+<status status="PASS" starttime="20220821 20:41:20.425" endtime="20220821 20:41:20.425"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.102" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.101" endtime="20220820 21:42:15.102"/>
+<msg timestamp="20220821 20:41:20.426" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.426" endtime="20220821 20:41:20.426"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.101" endtime="20220820 21:42:15.102"/>
+<status status="PASS" starttime="20220821 20:41:20.425" endtime="20220821 20:41:20.426"/>
 </kw>
 <doc>This documentation is split into multiple columns</doc>
-<status status="PASS" starttime="20220820 21:42:15.101" endtime="20220820 21:42:15.102"/>
+<status status="PASS" starttime="20220821 20:41:20.424" endtime="20220821 20:41:20.426"/>
 </test>
 <test id="s1-t9" name="Many lines" line="71">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.102" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.102" endtime="20220820 21:42:15.102"/>
+<msg timestamp="20220821 20:41:20.426" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.426" endtime="20220821 20:41:20.426"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.102" endtime="20220820 21:42:15.102"/>
+<status status="PASS" starttime="20220821 20:41:20.426" endtime="20220821 20:41:20.427"/>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" starttime="20220820 21:42:15.102" endtime="20220820 21:42:15.102"/>
+<status status="PASS" starttime="20220821 20:41:20.427" endtime="20220821 20:41:20.427"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.103" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.103" endtime="20220820 21:42:15.103"/>
+<msg timestamp="20220821 20:41:20.427" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.427" endtime="20220821 20:41:20.427"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.102" endtime="20220820 21:42:15.103"/>
+<status status="PASS" starttime="20220821 20:41:20.427" endtime="20220821 20:41:20.427"/>
 </kw>
 <doc>Here we have
 an automatic newline
 added</doc>
-<status status="PASS" starttime="20220820 21:42:15.102" endtime="20220820 21:42:15.103"/>
+<status status="PASS" starttime="20220821 20:41:20.426" endtime="20220821 20:41:20.427"/>
 </test>
 <test id="s1-t10" name="Using variables" line="77">
 <kw name="Test Start" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.104" level="INFO">Robot Framework 5.0,Starting test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.103" endtime="20220820 21:42:15.104"/>
+<msg timestamp="20220821 20:41:20.428" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.428" endtime="20220821 20:41:20.428"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.103" endtime="20220820 21:42:15.104"/>
+<status status="PASS" starttime="20220821 20:41:20.427" endtime="20220821 20:41:20.428"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${STRING}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.104" level="INFO">This is a long string. It has multiple sentences. It does not have newlines.</msg>
-<status status="PASS" starttime="20220820 21:42:15.104" endtime="20220820 21:42:15.104"/>
+<msg timestamp="20220821 20:41:20.428" level="INFO">This is a long string. It has multiple sentences. It does not have newlines.</msg>
+<status status="PASS" starttime="20220821 20:41:20.428" endtime="20220821 20:41:20.428"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${MULTILINE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.104" level="INFO">This is a long multiline string.
+<msg timestamp="20220821 20:41:20.428" level="INFO">This is a long multiline string.
 This is the second line.
 This is the third and the last line.</msg>
-<status status="PASS" starttime="20220820 21:42:15.104" endtime="20220820 21:42:15.104"/>
+<status status="PASS" starttime="20220821 20:41:20.428" endtime="20220821 20:41:20.428"/>
 </kw>
 <kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>${ROBOT},Ending test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220820 21:42:15.104" level="INFO">Robot Framework 5.0,Ending test case</msg>
-<status status="PASS" starttime="20220820 21:42:15.104" endtime="20220820 21:42:15.104"/>
+<msg timestamp="20220821 20:41:20.428" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.428" endtime="20220821 20:41:20.428"/>
 </kw>
-<status status="PASS" starttime="20220820 21:42:15.104" endtime="20220820 21:42:15.104"/>
+<status status="PASS" starttime="20220821 20:41:20.428" endtime="20220821 20:41:20.428"/>
 </kw>
 <doc>Setup and teardown specified using variables</doc>
-<status status="PASS" starttime="20220820 21:42:15.103" endtime="20220820 21:42:15.104"/>
+<status status="PASS" starttime="20220821 20:41:20.427" endtime="20220821 20:41:20.428"/>
 </test>
-<status status="FAIL" starttime="20220820 21:42:15.023" endtime="20220820 21:42:15.105"/>
+<test id="s1-t11" name="Using list Variables" line="84">
+<kw name="Test Start" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>${ROBOT},Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220821 20:41:20.429" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.429" endtime="20220821 20:41:20.429"/>
+</kw>
+<status status="PASS" starttime="20220821 20:41:20.429" endtime="20220821 20:41:20.429"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{LIST}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220821 20:41:20.429" level="INFO">this</msg>
+<msg timestamp="20220821 20:41:20.429" level="INFO">list</msg>
+<msg timestamp="20220821 20:41:20.429" level="INFO">is</msg>
+<msg timestamp="20220821 20:41:20.429" level="INFO">quite</msg>
+<msg timestamp="20220821 20:41:20.429" level="INFO">long</msg>
+<msg timestamp="20220821 20:41:20.429" level="INFO">and</msg>
+<msg timestamp="20220821 20:41:20.429" level="INFO">items in it can also be long</msg>
+<status status="PASS" starttime="20220821 20:41:20.429" endtime="20220821 20:41:20.429"/>
+</kw>
+<kw name="Test End" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>${ROBOT},Ending test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220821 20:41:20.430" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.430" endtime="20220821 20:41:20.430"/>
+</kw>
+<status status="PASS" starttime="20220821 20:41:20.429" endtime="20220821 20:41:20.430"/>
+</kw>
+<status status="PASS" starttime="20220821 20:41:20.429" endtime="20220821 20:41:20.430"/>
+</test>
+<test id="s1-t12" name="Using Dict Variables" line="86">
+<kw name="Test Start" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>${ROBOT},Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220821 20:41:20.430" level="INFO">Robot Framework 5.0,Starting test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.430" endtime="20220821 20:41:20.430"/>
+</kw>
+<status status="PASS" starttime="20220821 20:41:20.430" endtime="20220821 20:41:20.431"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>&amp;{DICT}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220821 20:41:20.431" level="INFO">first=This value is pretty long.</msg>
+<msg timestamp="20220821 20:41:20.431" level="INFO">second=This value is even longer. It has two sentences.</msg>
+<status status="PASS" starttime="20220821 20:41:20.431" endtime="20220821 20:41:20.431"/>
+</kw>
+<kw name="Test End" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>${ROBOT},Ending test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220821 20:41:20.431" level="INFO">Robot Framework 5.0,Ending test case</msg>
+<status status="PASS" starttime="20220821 20:41:20.431" endtime="20220821 20:41:20.431"/>
+</kw>
+<status status="PASS" starttime="20220821 20:41:20.431" endtime="20220821 20:41:20.431"/>
+</kw>
+<status status="PASS" starttime="20220821 20:41:20.430" endtime="20220821 20:41:20.431"/>
+</test>
+<status status="FAIL" starttime="20220821 20:41:20.331" endtime="20220821 20:41:20.432"/>
 </suite>
 <statistics>
 <total>
-<stat pass="8" fail="2" skip="0">All Tests</stat>
+<stat pass="10" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="8" fail="2" skip="0" id="s1" name="Main">Main</stat>
+<stat pass="10" fail="2" skip="0" id="s1" name="Main">Main</stat>
 </suite>
 </statistics>
 <errors>

@@ -6,9 +6,9 @@ Library    OperatingSystem
 Library    Process
 
 *** Variables ***
-${NAME}         Robot Framework
-${VERSION}      5.0
-${ROBOT}        ${NAME} ${VERSION}
+${NAME}    Robot Framework
+${VERSION}    5.0
+${ROBOT}    ${NAME} ${VERSION}
 ${SETUP}    Test Start
 ${TEARDOWN}    Test End
 ${HOST}    Srinaths-MacBook-Air.local
@@ -80,6 +80,11 @@ Using variables
     Log    ${STRING}
     Log    ${MULTILINE} 
     [Teardown]    ${TEARDOWN}
+#Using list variables 
+Using list Variables
+    Log Many    @{LIST}
+Using Dict Variables
+    Log Many    &{DICT}
 
 
     
