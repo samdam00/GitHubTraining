@@ -83,6 +83,7 @@ Using variables
 #Using list variables 
 Using list Variables
     Log Many    @{LIST}
+#Using dict variables 
 Using Dict Variables
     Log Many    &{DICT}
 
