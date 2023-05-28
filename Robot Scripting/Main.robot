@@ -89,7 +89,6 @@ Using list Variables
 Using Dict Variables
     Log Many    &{DICT}
 
-
     
 
     
