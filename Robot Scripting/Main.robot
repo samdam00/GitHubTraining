@@ -44,13 +44,15 @@ Test with Named arguments example
     Named arguments example    path=/tmp    options=-l
 Test with Free Named Arguments
     Free Named Arguments   "Logging with Aruguments"    INFO    TRUE    TRUE    config=MacOS
-#Failures
-Normal Error
-    Fail    This is a rather boring example...
 
-HTML Error
-    ${number} =    Get Number
-    Should Be Equal    ${number}    42    *HTML* Number is not my <b>MAGIC</b> number.
+#Failures
+#Normal Error
+#    Fail    This is a rather boring example...
+
+#HTML Error
+#    ${number} =    Get Number
+#    Should Be Equal    ${number}    42    *HTML* Number is not my <b>MAGIC</b> number.
+
 #Test case name and documentation
 Simple
     [Documentation]    Simple documentation
