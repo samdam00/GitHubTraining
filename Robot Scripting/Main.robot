@@ -88,6 +88,10 @@ Using list Variables
 #Using dict variables 
 Using Dict Variables
     Log Many    &{DICT}
+Using for loop
+    FOR    ${counter}    IN RANGE    0    10
+        Log    ${counter}
+    END
 
     
 
