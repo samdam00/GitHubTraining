@@ -3,9 +3,11 @@ Test Setup        Test Start
 Test Teardown     Test End
 Library           SeleniumLibrary
 Library           OperatingSystem
+Library           AppiumLibrary
+Library           ScreenCapLibrary
 
 *** Variables ***
-${NAME}           Robot Framework
+${NAME}           Robot Framework-
 ${VERSION}        4.1.3
 ${ROBOT}          ${NAME} ${VERSION}
 ${SETUP}          Test Start
@@ -19,11 +21,12 @@ ${MULTILINE}      SEPARATOR=\n    This is a long multiline string.    This is th
 
 *** Test Cases ***
 No operation
+    Comment    "This Test Case demonstrated No Operation"
     No Operation
 
 *** Keywords ***
 Test Start
-    Log    ${ROBOT},Starting test case
+    Log    Starting test case,${ROBOT},Running on,${HOST}
 
 Test End
-    Log    ${ROBOT},Ending test case
+    Log    Ending test case,${ROBOT},Running on,${HOST}
