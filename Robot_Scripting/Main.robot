@@ -5,6 +5,7 @@ Library           SeleniumLibrary
 Library           OperatingSystem
 Library           AppiumLibrary
 Library           ScreenCapLibrary
+Library    ../Python3/lib/python3.11/site-packages/robot/libraries/Telnet.py
 
 *** Variables ***
 ${NAME}           Robot Framework-
@@ -20,12 +21,19 @@ ${MULTILINE}      SEPARATOR=\n    This is a long multiline string.    This is th
 &{DICT}           first=This value is pretty long.    second=This value is even longer. It has two sentences.
 
 *** Test Cases ***
+Using Variables
+    Log    ${STRING}
+
 No operation
     Comment    "This Test Case demonstrated No Operation"
     No Operation
 
 *** Keywords ***
 Test Start
+    ${robotversion} =    Run    robot --version
+    ${hostname} =    Run    hostname
+    Set Global Variable    ${ROBOT}    ${robotversion}
+    Set Global Variable    ${HOST}   ${hostname}   
     Log    Starting test case,${ROBOT},Running on,${HOST}
 
 Test End
