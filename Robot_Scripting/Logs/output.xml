@@ -1,137 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20230714 19:37:20.284" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.18 on darwin)">
-<suite source="/Users/srinath/Documents/GitHubTraining/Robot_Scripting" id="s1" name="Robot Scripting">
-<suite source="/Users/srinath/Documents/GitHubTraining/Robot_Scripting/Main.robot" id="s1-s1" name="Main">
-<test id="s1-s1-t1" name="Using Variables">
-<kw type="SETUP" name="Test Start">
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20230715 23:42:12.762" rpa="false" schemaversion="4">
+<suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot_Scripting/Main.robot">
+<test id="s1-t1" name="Using Variables" line="24">
+<kw name="Test Start" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <var>${robotversion}</var>
 <arg>robot --version</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20230714 19:37:20.945" level="INFO">Running command 'robot --version 2&gt;&amp;1'.</msg>
-<msg timestamp="20230714 19:37:21.167" level="INFO">${robotversion} = Robot Framework 4.1.3 (Python 2.7.18 on darwin)</msg>
-<status status="PASS" endtime="20230714 19:37:21.167" starttime="20230714 19:37:20.944"/>
+<msg timestamp="20230715 23:42:14.524" level="INFO">Running command 'robot --version 2&gt;&amp;1'.</msg>
+<msg timestamp="20230715 23:42:14.693" level="INFO">${robotversion} = Robot Framework 6.1 (Python 3.11.4 on darwin)</msg>
+<status status="PASS" starttime="20230715 23:42:14.519" endtime="20230715 23:42:14.693"/>
 </kw>
 <kw name="Run" library="OperatingSystem">
 <var>${hostname}</var>
 <arg>hostname</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20230714 19:37:21.169" level="INFO">Running command 'hostname 2&gt;&amp;1'.</msg>
-<msg timestamp="20230714 19:37:21.190" level="INFO">${hostname} = Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.190" starttime="20230714 19:37:21.168"/>
+<msg timestamp="20230715 23:42:14.696" level="INFO">Running command 'hostname 2&gt;&amp;1'.</msg>
+<msg timestamp="20230715 23:42:14.702" level="INFO">${hostname} = Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.693" endtime="20230715 23:42:14.702"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ROBOT}</arg>
 <arg>${robotversion}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230714 19:37:21.191" level="INFO">${ROBOT} = Robot Framework 4.1.3 (Python 2.7.18 on darwin)</msg>
-<status status="PASS" endtime="20230714 19:37:21.191" starttime="20230714 19:37:21.190"/>
+<msg timestamp="20230715 23:42:14.703" level="INFO">${ROBOT} = Robot Framework 6.1 (Python 3.11.4 on darwin)</msg>
+<status status="PASS" starttime="20230715 23:42:14.703" endtime="20230715 23:42:14.703"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${HOST}</arg>
 <arg>${hostname}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230714 19:37:21.192" level="INFO">${HOST} = Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.192" starttime="20230714 19:37:21.191"/>
+<msg timestamp="20230715 23:42:14.703" level="INFO">${HOST} = Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.703" endtime="20230715 23:42:14.703"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Starting test case,${ROBOT},Running on,${HOST}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230714 19:37:21.193" level="INFO">Starting test case,Robot Framework 4.1.3 (Python 2.7.18 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.193" starttime="20230714 19:37:21.193"/>
+<msg timestamp="20230715 23:42:14.704" level="INFO">Starting test case,Robot Framework 6.1 (Python 3.11.4 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.703" endtime="20230715 23:42:14.704"/>
 </kw>
-<status status="PASS" endtime="20230714 19:37:21.193" starttime="20230714 19:37:20.943"/>
+<status status="PASS" starttime="20230715 23:42:14.519" endtime="20230715 23:42:14.704"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${STRING}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230714 19:37:21.194" level="INFO">This is a long string. It has multiple sentences. It does not have newlines.</msg>
-<status status="PASS" endtime="20230714 19:37:21.194" starttime="20230714 19:37:21.194"/>
+<msg timestamp="20230715 23:42:14.704" level="INFO">This is a long string. It has multiple sentences. It does not have newlines.</msg>
+<status status="PASS" starttime="20230715 23:42:14.704" endtime="20230715 23:42:14.704"/>
 </kw>
-<kw type="TEARDOWN" name="Test End">
+<kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>Ending test case,${ROBOT},Running on,${HOST}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230714 19:37:21.196" level="INFO">Ending test case,Robot Framework 4.1.3 (Python 2.7.18 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.196" starttime="20230714 19:37:21.195"/>
+<msg timestamp="20230715 23:42:14.705" level="INFO">Ending test case,Robot Framework 6.1 (Python 3.11.4 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.704" endtime="20230715 23:42:14.705"/>
 </kw>
-<status status="PASS" endtime="20230714 19:37:21.196" starttime="20230714 19:37:21.195"/>
+<status status="PASS" starttime="20230715 23:42:14.704" endtime="20230715 23:42:14.705"/>
 </kw>
-<status status="PASS" endtime="20230714 19:37:21.196" starttime="20230714 19:37:20.942"/>
+<status status="PASS" starttime="20230715 23:42:14.518" endtime="20230715 23:42:14.705"/>
 </test>
-<test id="s1-s1-t2" name="No operation">
-<kw type="SETUP" name="Test Start">
+<test id="s1-t2" name="No operation" line="27">
+<kw name="Test Start" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <var>${robotversion}</var>
 <arg>robot --version</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20230714 19:37:21.200" level="INFO">Running command 'robot --version 2&gt;&amp;1'.</msg>
-<msg timestamp="20230714 19:37:21.407" level="INFO">${robotversion} = Robot Framework 4.1.3 (Python 2.7.18 on darwin)</msg>
-<status status="PASS" endtime="20230714 19:37:21.407" starttime="20230714 19:37:21.198"/>
+<msg timestamp="20230715 23:42:14.708" level="INFO">Running command 'robot --version 2&gt;&amp;1'.</msg>
+<msg timestamp="20230715 23:42:14.865" level="INFO">${robotversion} = Robot Framework 6.1 (Python 3.11.4 on darwin)</msg>
+<status status="PASS" starttime="20230715 23:42:14.705" endtime="20230715 23:42:14.865"/>
 </kw>
 <kw name="Run" library="OperatingSystem">
 <var>${hostname}</var>
 <arg>hostname</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20230714 19:37:21.409" level="INFO">Running command 'hostname 2&gt;&amp;1'.</msg>
-<msg timestamp="20230714 19:37:21.428" level="INFO">${hostname} = Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.428" starttime="20230714 19:37:21.408"/>
+<msg timestamp="20230715 23:42:14.868" level="INFO">Running command 'hostname 2&gt;&amp;1'.</msg>
+<msg timestamp="20230715 23:42:14.873" level="INFO">${hostname} = Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.866" endtime="20230715 23:42:14.873"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ROBOT}</arg>
 <arg>${robotversion}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230714 19:37:21.429" level="INFO">${ROBOT} = Robot Framework 4.1.3 (Python 2.7.18 on darwin)</msg>
-<status status="PASS" endtime="20230714 19:37:21.429" starttime="20230714 19:37:21.428"/>
+<msg timestamp="20230715 23:42:14.873" level="INFO">${ROBOT} = Robot Framework 6.1 (Python 3.11.4 on darwin)</msg>
+<status status="PASS" starttime="20230715 23:42:14.873" endtime="20230715 23:42:14.873"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${HOST}</arg>
 <arg>${hostname}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230714 19:37:21.430" level="INFO">${HOST} = Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.430" starttime="20230714 19:37:21.430"/>
+<msg timestamp="20230715 23:42:14.873" level="INFO">${HOST} = Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.873" endtime="20230715 23:42:14.874"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Starting test case,${ROBOT},Running on,${HOST}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230714 19:37:21.431" level="INFO">Starting test case,Robot Framework 4.1.3 (Python 2.7.18 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.431" starttime="20230714 19:37:21.431"/>
+<msg timestamp="20230715 23:42:14.874" level="INFO">Starting test case,Robot Framework 6.1 (Python 3.11.4 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.874" endtime="20230715 23:42:14.874"/>
 </kw>
-<status status="PASS" endtime="20230714 19:37:21.431" starttime="20230714 19:37:21.198"/>
+<status status="PASS" starttime="20230715 23:42:14.705" endtime="20230715 23:42:14.874"/>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <arg>"This Test Case demonstrated No Operation"</arg>
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
-<status status="PASS" endtime="20230714 19:37:21.432" starttime="20230714 19:37:21.432"/>
+<status status="PASS" starttime="20230715 23:42:14.874" endtime="20230715 23:42:14.874"/>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" endtime="20230714 19:37:21.433" starttime="20230714 19:37:21.432"/>
+<status status="PASS" starttime="20230715 23:42:14.874" endtime="20230715 23:42:14.874"/>
 </kw>
-<kw type="TEARDOWN" name="Test End">
+<kw name="Test End" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>Ending test case,${ROBOT},Running on,${HOST}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230714 19:37:21.434" level="INFO">Ending test case,Robot Framework 4.1.3 (Python 2.7.18 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
-<status status="PASS" endtime="20230714 19:37:21.434" starttime="20230714 19:37:21.434"/>
+<msg timestamp="20230715 23:42:14.875" level="INFO">Ending test case,Robot Framework 6.1 (Python 3.11.4 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
+<status status="PASS" starttime="20230715 23:42:14.874" endtime="20230715 23:42:14.875"/>
 </kw>
-<status status="PASS" endtime="20230714 19:37:21.435" starttime="20230714 19:37:21.433"/>
+<status status="PASS" starttime="20230715 23:42:14.874" endtime="20230715 23:42:14.875"/>
 </kw>
-<status status="PASS" endtime="20230714 19:37:21.435" starttime="20230714 19:37:21.197"/>
+<status status="PASS" starttime="20230715 23:42:14.705" endtime="20230715 23:42:14.875"/>
 </test>
-<status status="PASS" endtime="20230714 19:37:21.436" starttime="20230714 19:37:20.326"/>
-</suite>
-<status status="PASS" endtime="20230714 19:37:21.438" starttime="20230714 19:37:20.304"/>
+<status status="PASS" starttime="20230715 23:42:12.763" endtime="20230715 23:42:14.875"/>
 </suite>
 <statistics>
 <total>
-<stat fail="0" skip="0" pass="2">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" skip="0" id="s1" name="Robot Scripting" pass="2">Robot Scripting</stat>
-<stat fail="0" skip="0" id="s1-s1" name="Main" pass="2">Robot Scripting.Main</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Main">Main</stat>
 </suite>
 </statistics>
 <errors>
