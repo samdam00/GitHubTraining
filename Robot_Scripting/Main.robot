@@ -5,7 +5,9 @@ Library           SeleniumLibrary
 Library           OperatingSystem
 Library           AppiumLibrary
 Library           ScreenCapLibrary
+Library           MyCustomLibrary.py
 Library    ../Python3/lib/python3.11/site-packages/robot/libraries/Telnet.py
+Library    ../Python3/lib/python3.11/site-packages/robot/libraries/String.py
 
 *** Variables ***
 ${NAME}           Robot Framework-
@@ -19,15 +21,16 @@ ${STRING}         This is a long string.    It has multiple sentences.    It doe
 ${MULTILINE}      SEPARATOR=\n    This is a long multiline string.    This is the second line.    This is the third and the last line.
 @{LIST}           this    list    is    quite    long    and    items in it can also be long
 &{DICT}           first=This value is pretty long.    second=This value is even longer. It has two sentences.
-
 *** Test Cases ***
-Using Variables
-    Log    ${STRING}
+TC_01
+    [Documentation]    Verify list of characters from a string
+    ${index} =    Set Variable    0
+    ${length} =    Get Length    ${STRING}
+    FOR    ${index}    IN RANGE    0    ${length} 
+        ${char} =    Set Variable    ${STRING[${index}]}
+        Log    ${char}
+    END
 
-No operation
-    Comment    "This Test Case demonstrated No Operation"
-    No Operation
-`
 *** Keywords ***
 Test Start
     ${robotversion} =    Run    robot --version
@@ -35,6 +38,7 @@ Test Start
     Set Global Variable    ${ROBOT}    ${robotversion}
     Set Global Variable    ${HOST}   ${hostname}   
     Log    Starting test case,${ROBOT},Running on,${HOST}
+  
 
 Test End
     Log    Ending test case,${ROBOT},Running on,${HOST}
