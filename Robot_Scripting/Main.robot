@@ -30,6 +30,9 @@ TC_01
         ${char} =    Set Variable    ${STRING[${index}]}
         Log    ${char}
     END
+    FOR    ${index}    IN RANGE    0    61
+        Log    ${index}
+    END
 
 *** Keywords ***
 Test Start
