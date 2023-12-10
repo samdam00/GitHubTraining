@@ -22,7 +22,7 @@ ${MULTILINE}      SEPARATOR=\n    This is a long multiline string.    This is th
 @{LIST}           this    list    is    quite    long    and    items in it can also be long
 &{DICT}           first=This value is pretty long.    second=This value is even longer. It has two sentences.
 *** Test Cases ***
-TC_01
+TestCase_01
     [Documentation]    Verify list of characters from a string
     ${index} =    Set Variable    0
     ${length} =    Get Length    ${STRING}
