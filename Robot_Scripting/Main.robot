@@ -1,13 +1,13 @@
 *** Settings ***
 Test Setup        Test Start
 Test Teardown     Test End
+Library           String
 Library           SeleniumLibrary
 Library           OperatingSystem
 Library           AppiumLibrary
 Library           ScreenCapLibrary
 Library           MyCustomLibrary.py
-Library    ../Python3/lib/python3.11/site-packages/robot/libraries/Telnet.py
-Library    ../Python3/lib/python3.11/site-packages/robot/libraries/String.py
+Library           Telnet.py
 
 *** Variables ***
 ${NAME}           Robot Framework-
@@ -33,6 +33,9 @@ TestCase_01
     FOR    ${index}    IN RANGE    0    61
         Log    ${index}
     END
+    #Dictionary
+    &{AKEUIns_Applilist} =    Create Dictionary    TestAppliTBC=&{DICT}
+    
 
 *** Keywords ***
 Test Start
