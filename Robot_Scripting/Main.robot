@@ -7,7 +7,7 @@ Library           OperatingSystem
 Library           AppiumLibrary
 Library           ScreenCapLibrary
 Library           MyCustomLibrary.py
-Library           Telnet.py
+#Library           Telnet.py
 
 *** Variables ***
 ${NAME}           Robot Framework-
@@ -33,16 +33,12 @@ TestCase_01
     FOR    ${index}    IN RANGE    0    61
         Log    ${index}
     END
-    #Dictionary
-    &{AKEUIns_Applilist} =    Create Dictionary    TestAppliTBC=&{DICT}
     
 
 *** Keywords ***
 Test Start
     ${robotversion} =    Run    robot --version
-    ${hostname} =    Run    hostname
     Set Global Variable    ${ROBOT}    ${robotversion}
-    Set Global Variable    ${HOST}   ${hostname}   
     Log    Starting test case,${ROBOT},Running on,${HOST}
   
 
