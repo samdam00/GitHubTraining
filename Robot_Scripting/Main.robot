@@ -7,7 +7,6 @@ Library           OperatingSystem
 Library           AppiumLibrary
 Library           ScreenCapLibrary
 Library           MyCustomLibrary.py
-#Library           Telnet.py
 
 *** Variables ***
 ${NAME}           Robot Framework-
