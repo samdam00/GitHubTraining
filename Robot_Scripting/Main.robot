@@ -22,13 +22,18 @@ ${MULTILINE}      SEPARATOR=\n    This is a long multiline string.    This is th
 &{DICT}           first=This value is pretty long.    second=This value is even longer. It has two sentences.
 *** Test Cases ***
 TestCase_01
-    [Documentation]    Verify list of characters from a String
+    [Documentation]    Verify operations on the string
     ${index} =    Set Variable    0
     ${length} =    Get Length    ${STRING}
+    #Character in Integer
     FOR    ${index}    IN RANGE    0    ${length} 
         ${char} =    Set Variable    ${STRING[${index}]}
-        Log    ${char}
+        ${integer} =    Evaluate    ord('${char}')
+        Log    ${integer}
     END
+    #convert to lower case
+    ${lowercase} =    Convert To Lower Case   ${String}
+
 
 *** Keywords ***
 Test Start
