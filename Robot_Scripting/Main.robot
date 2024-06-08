@@ -9,7 +9,7 @@ Library           ScreenCapLibrary
 Library           MyCustomLibrary.py
 
 *** Variables ***
-${NAME}           Robot Framework-
+${NAME}           Robot Framework-7.1
 ${VERSION}        4.1.3
 ${ROBOT}          ${NAME} ${VERSION}
 ${SETUP}          Test Start
@@ -29,7 +29,6 @@ TestCase_01
         ${char} =    Set Variable    ${STRING[${index}]}
         Log    ${char}
     END
-    
 
 *** Keywords ***
 Test Start

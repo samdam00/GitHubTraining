@@ -1,1376 +1,383 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.8 on darwin)" generated="20240323 19:15:47.464" rpa="false" schemaversion="4">
-<suite id="s1" name="GitHubTraining" source="/Users/srinath/Documents/GitHubTraining">
-<suite id="s1-s1" name="Robot Scripting" source="/Users/srinath/Documents/GitHubTraining/Robot_Scripting">
-<suite id="s1-s1-s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot_Scripting/Main.robot">
-<test id="s1-s1-s1-t1" name="TestCase_01" line="25">
+<robot generator="Robot 7.0 (Python 3.11.9 on darwin)" generated="2024-06-08T20:45:31.048274" rpa="false" schemaversion="5">
+<suite id="s1" name="Main" source="/Users/srinath/Documents/GitHubTraining/Robot_Scripting/Main.robot">
+<test id="s1-t1" name="TestCase_01" line="24">
 <kw name="Test Start" type="SETUP">
-<kw name="Run" library="OperatingSystem">
+<kw name="Run" owner="OperatingSystem">
+<msg time="2024-06-08T20:45:32.165627" level="INFO">Running command 'robot --version 2&gt;&amp;1'.</msg>
+<msg time="2024-06-08T20:45:32.321123" level="INFO">${robotversion} = Robot Framework 7.0 (Python 3.11.9 on darwin)</msg>
 <var>${robotversion}</var>
 <arg>robot --version</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20240323 19:15:50.051" level="INFO">Running command 'robot --version 2&gt;&amp;1'.</msg>
-<msg timestamp="20240323 19:15:50.477" level="INFO">${robotversion} = Robot Framework 4.1.3 (Python 2.7.18 on darwin)</msg>
-<status status="PASS" starttime="20240323 19:15:50.047" endtime="20240323 19:15:50.478"/>
+<status status="PASS" start="2024-06-08T20:45:32.160694" elapsed="0.160615"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:45:32.322344" level="INFO">${ROBOT} = Robot Framework 7.0 (Python 3.11.9 on darwin)</msg>
 <arg>${ROBOT}</arg>
 <arg>${robotversion}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240323 19:15:50.478" level="INFO">${ROBOT} = Robot Framework 4.1.3 (Python 2.7.18 on darwin)</msg>
-<status status="PASS" starttime="20240323 19:15:50.478" endtime="20240323 19:15:50.478"/>
+<status status="PASS" start="2024-06-08T20:45:32.321781" elapsed="0.000660"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:45:32.322837" level="INFO">Starting test case,Robot Framework 7.0 (Python 3.11.9 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
 <arg>Starting test case,${ROBOT},Running on,${HOST}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.479" level="INFO">Starting test case,Robot Framework 4.1.3 (Python 2.7.18 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
-<status status="PASS" starttime="20240323 19:15:50.478" endtime="20240323 19:15:50.479"/>
+<status status="PASS" start="2024-06-08T20:45:32.322614" elapsed="0.000305"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.047" endtime="20240323 19:15:50.479"/>
+<status status="PASS" start="2024-06-08T20:45:32.159711" elapsed="0.163331"/>
 </kw>
-<kw name="Set Variable" library="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:45:32.323604" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.479" level="INFO">${index} = 0</msg>
-<status status="PASS" starttime="20240323 19:15:50.479" endtime="20240323 19:15:50.479"/>
+<status status="PASS" start="2024-06-08T20:45:32.323363" elapsed="0.000321"/>
 </kw>
-<kw name="Get Length" library="BuiltIn">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-06-08T20:46:02.760630" level="INFO">Length is 76.</msg>
+<msg time="2024-06-08T20:46:02.761041" level="INFO">${length} = 76</msg>
 <var>${length}</var>
 <arg>${STRING}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20240323 19:15:50.480" level="INFO">Length is 76</msg>
-<msg timestamp="20240323 19:15:50.480" level="INFO">${length} = 76</msg>
-<status status="PASS" starttime="20240323 19:15:50.480" endtime="20240323 19:15:50.480"/>
+<status status="PASS" start="2024-06-08T20:45:32.323994" elapsed="30.437177"/>
 </kw>
 <for flavor="IN RANGE">
-<var>${index}</var>
-<value>0</value>
-<value>${length}</value>
 <iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:04.501491" level="INFO">${char} = T</msg>
+<var>${char}</var>
+<arg>${STRING[${index}]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-08T20:46:04.158939" elapsed="0.342740"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:04.670666" level="INFO">T</msg>
+<arg>${char}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-08T20:46:04.502003" elapsed="0.168817"/>
+</kw>
 <var name="${index}">0</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:03.948377" elapsed="0.722566"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:05.325878" level="INFO">${char} = h</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.481" level="INFO">${char} = T</msg>
-<status status="PASS" starttime="20240323 19:15:50.480" endtime="20240323 19:15:50.481"/>
+<status status="PASS" start="2024-06-08T20:46:04.846494" elapsed="0.479547"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:05.523583" level="INFO">h</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.481" level="INFO">T</msg>
-<status status="PASS" starttime="20240323 19:15:50.481" endtime="20240323 19:15:50.481"/>
+<status status="PASS" start="2024-06-08T20:46:05.326342" elapsed="0.197385"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.480" endtime="20240323 19:15:50.481"/>
-</iter>
-<iter>
 <var name="${index}">1</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:04.671073" elapsed="0.852766"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:05.950476" level="INFO">${char} = i</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.482" level="INFO">${char} = h</msg>
-<status status="PASS" starttime="20240323 19:15:50.481" endtime="20240323 19:15:50.482"/>
+<status status="PASS" start="2024-06-08T20:46:05.827556" elapsed="0.123133"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:06.523665" level="INFO">i</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.482" level="INFO">h</msg>
-<status status="PASS" starttime="20240323 19:15:50.482" endtime="20240323 19:15:50.482"/>
+<status status="PASS" start="2024-06-08T20:46:05.951070" elapsed="0.572740"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.481" endtime="20240323 19:15:50.482"/>
-</iter>
-<iter>
 <var name="${index}">2</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:05.523975" elapsed="0.999957"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:06.890871" level="INFO">${char} = s</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.483" level="INFO">${char} = i</msg>
-<status status="PASS" starttime="20240323 19:15:50.482" endtime="20240323 19:15:50.483"/>
+<status status="PASS" start="2024-06-08T20:46:06.725740" elapsed="0.165256"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:07.066429" level="INFO">s</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.483" level="INFO">i</msg>
-<status status="PASS" starttime="20240323 19:15:50.483" endtime="20240323 19:15:50.483"/>
+<status status="PASS" start="2024-06-08T20:46:06.891189" elapsed="0.175372"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.482" endtime="20240323 19:15:50.483"/>
-</iter>
-<iter>
 <var name="${index}">3</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:06.524091" elapsed="0.542579"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:07.382295" level="INFO">${char} =  </msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.483" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.483" endtime="20240323 19:15:50.484"/>
+<status status="PASS" start="2024-06-08T20:46:07.222103" elapsed="0.160288"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:07.558218" level="INFO"> </msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.484" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.484" endtime="20240323 19:15:50.484"/>
+<status status="PASS" start="2024-06-08T20:46:07.382557" elapsed="0.175771"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.483" endtime="20240323 19:15:50.484"/>
-</iter>
-<iter>
 <var name="${index}">4</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:07.066802" elapsed="0.491621"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:07.886672" level="INFO">${char} = i</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.484" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.484" endtime="20240323 19:15:50.484"/>
+<status status="PASS" start="2024-06-08T20:46:07.710296" elapsed="0.176506"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:08.046052" level="INFO">i</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.484" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.484" endtime="20240323 19:15:50.484"/>
+<status status="PASS" start="2024-06-08T20:46:07.887012" elapsed="0.159156"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.484" endtime="20240323 19:15:50.485"/>
-</iter>
-<iter>
 <var name="${index}">5</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:07.558527" elapsed="0.487733"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:08.386418" level="INFO">${char} = s</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.485" level="INFO">${char} = i</msg>
-<status status="PASS" starttime="20240323 19:15:50.485" endtime="20240323 19:15:50.485"/>
+<status status="PASS" start="2024-06-08T20:46:08.218358" elapsed="0.168155"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:08.518008" level="INFO">s</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.485" level="INFO">i</msg>
-<status status="PASS" starttime="20240323 19:15:50.485" endtime="20240323 19:15:50.485"/>
+<status status="PASS" start="2024-06-08T20:46:08.386682" elapsed="0.131439"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.485" endtime="20240323 19:15:50.485"/>
-</iter>
-<iter>
 <var name="${index}">6</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:08.046364" elapsed="0.471852"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:08.891884" level="INFO">${char} =  </msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.486" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.485" endtime="20240323 19:15:50.486"/>
+<status status="PASS" start="2024-06-08T20:46:08.677646" elapsed="0.214371"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:09.054264" level="INFO"> </msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.486" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.486" endtime="20240323 19:15:50.486"/>
+<status status="PASS" start="2024-06-08T20:46:08.892256" elapsed="0.162145"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.485" endtime="20240323 19:15:50.486"/>
-</iter>
-<iter>
 <var name="${index}">7</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:08.518327" elapsed="0.536182"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:09.382461" level="INFO">${char} = a</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.486" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.486" endtime="20240323 19:15:50.486"/>
+<status status="PASS" start="2024-06-08T20:46:09.218300" elapsed="0.164261"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:09.558318" level="INFO">a</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.487" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.487" endtime="20240323 19:15:50.487"/>
+<status status="PASS" start="2024-06-08T20:46:09.382923" elapsed="0.175523"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.486" endtime="20240323 19:15:50.487"/>
-</iter>
-<iter>
 <var name="${index}">8</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:09.054628" elapsed="0.503923"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:09.906566" level="INFO">${char} =  </msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.487" level="INFO">${char} = a</msg>
-<status status="PASS" starttime="20240323 19:15:50.487" endtime="20240323 19:15:50.487"/>
+<status status="PASS" start="2024-06-08T20:46:09.738607" elapsed="0.168067"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:10.078325" level="INFO"> </msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.487" level="INFO">a</msg>
-<status status="PASS" starttime="20240323 19:15:50.487" endtime="20240323 19:15:50.488"/>
+<status status="PASS" start="2024-06-08T20:46:09.906867" elapsed="0.171589"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.487" endtime="20240323 19:15:50.488"/>
-</iter>
-<iter>
 <var name="${index}">9</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:09.558667" elapsed="0.519896"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:10.414692" level="INFO">${char} = l</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.488" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.488" endtime="20240323 19:15:50.488"/>
+<status status="PASS" start="2024-06-08T20:46:10.250118" elapsed="0.164681"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:10.590433" level="INFO">l</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.488" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.488" endtime="20240323 19:15:50.488"/>
+<status status="PASS" start="2024-06-08T20:46:10.414984" elapsed="0.175592"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.488" endtime="20240323 19:15:50.488"/>
-</iter>
-<iter>
 <var name="${index}">10</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:10.078695" elapsed="0.512000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:10.902826" level="INFO">${char} = o</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.489" level="INFO">${char} = l</msg>
-<status status="PASS" starttime="20240323 19:15:50.488" endtime="20240323 19:15:50.489"/>
+<status status="PASS" start="2024-06-08T20:46:10.701704" elapsed="0.201253"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:11.085837" level="INFO">o</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.489" level="INFO">l</msg>
-<status status="PASS" starttime="20240323 19:15:50.489" endtime="20240323 19:15:50.489"/>
+<status status="PASS" start="2024-06-08T20:46:10.903192" elapsed="0.182757"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.488" endtime="20240323 19:15:50.489"/>
-</iter>
-<iter>
 <var name="${index}">11</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:10.590838" elapsed="0.495204"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:11.458541" level="INFO">${char} = n</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.489" level="INFO">${char} = o</msg>
-<status status="PASS" starttime="20240323 19:15:50.489" endtime="20240323 19:15:50.489"/>
+<status status="PASS" start="2024-06-08T20:46:11.294486" elapsed="0.164161"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:11.626179" level="INFO">n</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.489" level="INFO">o</msg>
-<status status="PASS" starttime="20240323 19:15:50.489" endtime="20240323 19:15:50.490"/>
+<status status="PASS" start="2024-06-08T20:46:11.458839" elapsed="0.167475"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.489" endtime="20240323 19:15:50.490"/>
-</iter>
-<iter>
 <var name="${index}">12</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:11.086143" elapsed="0.540277"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:11.958528" level="INFO">${char} = g</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.490" level="INFO">${char} = n</msg>
-<status status="PASS" starttime="20240323 19:15:50.490" endtime="20240323 19:15:50.490"/>
+<status status="PASS" start="2024-06-08T20:46:11.797696" elapsed="0.160940"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:12.117829" level="INFO">g</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.490" level="INFO">n</msg>
-<status status="PASS" starttime="20240323 19:15:50.490" endtime="20240323 19:15:50.490"/>
+<status status="PASS" start="2024-06-08T20:46:11.958823" elapsed="0.159114"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.490" endtime="20240323 19:15:50.490"/>
-</iter>
-<iter>
 <var name="${index}">13</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:11.626535" elapsed="0.491495"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:12.462619" level="INFO">${char} =  </msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.491" level="INFO">${char} = g</msg>
-<status status="PASS" starttime="20240323 19:15:50.490" endtime="20240323 19:15:50.491"/>
+<status status="PASS" start="2024-06-08T20:46:12.297724" elapsed="0.165005"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:12.630264" level="INFO"> </msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.491" level="INFO">g</msg>
-<status status="PASS" starttime="20240323 19:15:50.491" endtime="20240323 19:15:50.491"/>
+<status status="PASS" start="2024-06-08T20:46:12.462923" elapsed="0.167469"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.490" endtime="20240323 19:15:50.491"/>
-</iter>
-<iter>
 <var name="${index}">14</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:12.118132" elapsed="0.512366"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:12.970882" level="INFO">${char} = s</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.491" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.491" endtime="20240323 19:15:50.491"/>
+<status status="PASS" start="2024-06-08T20:46:12.761513" elapsed="0.209484"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:13.129983" level="INFO">s</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.491" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.491" endtime="20240323 19:15:50.491"/>
+<status status="PASS" start="2024-06-08T20:46:12.971207" elapsed="0.158893"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.491" endtime="20240323 19:15:50.492"/>
-</iter>
-<iter>
 <var name="${index}">15</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:12.630614" elapsed="0.499585"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:13.454666" level="INFO">${char} = t</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.492" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.492" endtime="20240323 19:15:50.492"/>
+<status status="PASS" start="2024-06-08T20:46:13.297830" elapsed="0.156944"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:13.577602" level="INFO">t</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.492" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.492" endtime="20240323 19:15:50.492"/>
+<status status="PASS" start="2024-06-08T20:46:13.454968" elapsed="0.122747"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.492" endtime="20240323 19:15:50.492"/>
-</iter>
-<iter>
 <var name="${index}">16</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:13.130316" elapsed="0.447493"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:13.981956" level="INFO">${char} = r</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.493" level="INFO">${char} = t</msg>
-<status status="PASS" starttime="20240323 19:15:50.492" endtime="20240323 19:15:50.493"/>
+<status status="PASS" start="2024-06-08T20:46:13.828850" elapsed="0.153201"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:14.202430" level="INFO">r</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.493" level="INFO">t</msg>
-<status status="PASS" starttime="20240323 19:15:50.493" endtime="20240323 19:15:50.493"/>
+<status status="PASS" start="2024-06-08T20:46:13.982226" elapsed="0.220359"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.492" endtime="20240323 19:15:50.493"/>
-</iter>
-<iter>
 <var name="${index}">17</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:13.577912" elapsed="0.624804"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:14.669988" level="INFO">${char} = i</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.493" level="INFO">${char} = r</msg>
-<status status="PASS" starttime="20240323 19:15:50.493" endtime="20240323 19:15:50.493"/>
+<status status="PASS" start="2024-06-08T20:46:14.515443" elapsed="0.154650"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:14.821508" level="INFO">i</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.493" level="INFO">r</msg>
-<status status="PASS" starttime="20240323 19:15:50.493" endtime="20240323 19:15:50.493"/>
+<status status="PASS" start="2024-06-08T20:46:14.670259" elapsed="0.151361"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.493" endtime="20240323 19:15:50.493"/>
-</iter>
-<iter>
 <var name="${index}">18</var>
-<kw name="Set Variable" library="BuiltIn">
+<status status="PASS" start="2024-06-08T20:46:14.202864" elapsed="0.618855"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-08T20:46:15.138312" level="INFO">${char} = n</msg>
 <var>${char}</var>
 <arg>${STRING[${index}]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.494" level="INFO">${char} = i</msg>
-<status status="PASS" starttime="20240323 19:15:50.493" endtime="20240323 19:15:50.494"/>
+<status status="PASS" start="2024-06-08T20:46:14.973873" elapsed="0.164541"/>
 </kw>
-<kw name="Log" library="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-08T20:46:15.296780" level="INFO">n</msg>
 <arg>${char}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.495" level="INFO">i</msg>
-<status status="PASS" starttime="20240323 19:15:50.495" endtime="20240323 19:15:50.495"/>
+<status status="PASS" start="2024-06-08T20:46:15.138602" elapsed="0.158290"/>
 </kw>
-<status status="PASS" starttime="20240323 19:15:50.493" endtime="20240323 19:15:50.495"/>
-</iter>
-<iter>
 <var name="${index}">19</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.495" level="INFO">${char} = n</msg>
-<status status="PASS" starttime="20240323 19:15:50.495" endtime="20240323 19:15:50.495"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.495" level="INFO">n</msg>
-<status status="PASS" starttime="20240323 19:15:50.495" endtime="20240323 19:15:50.495"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.495" endtime="20240323 19:15:50.495"/>
-</iter>
-<iter>
-<var name="${index}">20</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.496" level="INFO">${char} = g</msg>
-<status status="PASS" starttime="20240323 19:15:50.496" endtime="20240323 19:15:50.496"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.496" level="INFO">g</msg>
-<status status="PASS" starttime="20240323 19:15:50.496" endtime="20240323 19:15:50.496"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.496" endtime="20240323 19:15:50.496"/>
-</iter>
-<iter>
-<var name="${index}">21</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.496" level="INFO">${char} = .</msg>
-<status status="PASS" starttime="20240323 19:15:50.496" endtime="20240323 19:15:50.496"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.497" level="INFO">.</msg>
-<status status="PASS" starttime="20240323 19:15:50.497" endtime="20240323 19:15:50.497"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.496" endtime="20240323 19:15:50.497"/>
-</iter>
-<iter>
-<var name="${index}">22</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.497" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.497" endtime="20240323 19:15:50.497"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.497" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.497" endtime="20240323 19:15:50.497"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.497" endtime="20240323 19:15:50.497"/>
-</iter>
-<iter>
-<var name="${index}">23</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.498" level="INFO">${char} = I</msg>
-<status status="PASS" starttime="20240323 19:15:50.497" endtime="20240323 19:15:50.498"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.498" level="INFO">I</msg>
-<status status="PASS" starttime="20240323 19:15:50.498" endtime="20240323 19:15:50.498"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.497" endtime="20240323 19:15:50.498"/>
-</iter>
-<iter>
-<var name="${index}">24</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.498" level="INFO">${char} = t</msg>
-<status status="PASS" starttime="20240323 19:15:50.498" endtime="20240323 19:15:50.498"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.498" level="INFO">t</msg>
-<status status="PASS" starttime="20240323 19:15:50.498" endtime="20240323 19:15:50.498"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.498" endtime="20240323 19:15:50.498"/>
-</iter>
-<iter>
-<var name="${index}">25</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.499" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.499" endtime="20240323 19:15:50.499"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.499" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.499" endtime="20240323 19:15:50.499"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.498" endtime="20240323 19:15:50.499"/>
-</iter>
-<iter>
-<var name="${index}">26</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.499" level="INFO">${char} = h</msg>
-<status status="PASS" starttime="20240323 19:15:50.499" endtime="20240323 19:15:50.499"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.500" level="INFO">h</msg>
-<status status="PASS" starttime="20240323 19:15:50.499" endtime="20240323 19:15:50.500"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.499" endtime="20240323 19:15:50.500"/>
-</iter>
-<iter>
-<var name="${index}">27</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.500" level="INFO">${char} = a</msg>
-<status status="PASS" starttime="20240323 19:15:50.500" endtime="20240323 19:15:50.500"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.500" level="INFO">a</msg>
-<status status="PASS" starttime="20240323 19:15:50.500" endtime="20240323 19:15:50.500"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.500" endtime="20240323 19:15:50.500"/>
-</iter>
-<iter>
-<var name="${index}">28</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.501" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.500" endtime="20240323 19:15:50.501"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.501" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.501" endtime="20240323 19:15:50.501"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.500" endtime="20240323 19:15:50.501"/>
-</iter>
-<iter>
-<var name="${index}">29</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.501" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.501" endtime="20240323 19:15:50.501"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.501" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.501" endtime="20240323 19:15:50.501"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.501" endtime="20240323 19:15:50.501"/>
-</iter>
-<iter>
-<var name="${index}">30</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.502" level="INFO">${char} = m</msg>
-<status status="PASS" starttime="20240323 19:15:50.502" endtime="20240323 19:15:50.502"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.502" level="INFO">m</msg>
-<status status="PASS" starttime="20240323 19:15:50.502" endtime="20240323 19:15:50.502"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.501" endtime="20240323 19:15:50.502"/>
-</iter>
-<iter>
-<var name="${index}">31</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.502" level="INFO">${char} = u</msg>
-<status status="PASS" starttime="20240323 19:15:50.502" endtime="20240323 19:15:50.502"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.503" level="INFO">u</msg>
-<status status="PASS" starttime="20240323 19:15:50.502" endtime="20240323 19:15:50.503"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.502" endtime="20240323 19:15:50.503"/>
-</iter>
-<iter>
-<var name="${index}">32</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.503" level="INFO">${char} = l</msg>
-<status status="PASS" starttime="20240323 19:15:50.503" endtime="20240323 19:15:50.503"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.503" level="INFO">l</msg>
-<status status="PASS" starttime="20240323 19:15:50.503" endtime="20240323 19:15:50.503"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.503" endtime="20240323 19:15:50.503"/>
-</iter>
-<iter>
-<var name="${index}">33</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.504" level="INFO">${char} = t</msg>
-<status status="PASS" starttime="20240323 19:15:50.503" endtime="20240323 19:15:50.504"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.504" level="INFO">t</msg>
-<status status="PASS" starttime="20240323 19:15:50.504" endtime="20240323 19:15:50.504"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.503" endtime="20240323 19:15:50.504"/>
-</iter>
-<iter>
-<var name="${index}">34</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.504" level="INFO">${char} = i</msg>
-<status status="PASS" starttime="20240323 19:15:50.504" endtime="20240323 19:15:50.504"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.504" level="INFO">i</msg>
-<status status="PASS" starttime="20240323 19:15:50.504" endtime="20240323 19:15:50.504"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.504" endtime="20240323 19:15:50.504"/>
-</iter>
-<iter>
-<var name="${index}">35</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.505" level="INFO">${char} = p</msg>
-<status status="PASS" starttime="20240323 19:15:50.504" endtime="20240323 19:15:50.505"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.505" level="INFO">p</msg>
-<status status="PASS" starttime="20240323 19:15:50.505" endtime="20240323 19:15:50.505"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.504" endtime="20240323 19:15:50.505"/>
-</iter>
-<iter>
-<var name="${index}">36</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.505" level="INFO">${char} = l</msg>
-<status status="PASS" starttime="20240323 19:15:50.505" endtime="20240323 19:15:50.505"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.505" level="INFO">l</msg>
-<status status="PASS" starttime="20240323 19:15:50.505" endtime="20240323 19:15:50.506"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.505" endtime="20240323 19:15:50.506"/>
-</iter>
-<iter>
-<var name="${index}">37</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.506" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.506" endtime="20240323 19:15:50.506"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.506" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.506" endtime="20240323 19:15:50.506"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.506" endtime="20240323 19:15:50.506"/>
-</iter>
-<iter>
-<var name="${index}">38</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.507" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.506" endtime="20240323 19:15:50.507"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.507" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.507" endtime="20240323 19:15:50.507"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.506" endtime="20240323 19:15:50.507"/>
-</iter>
-<iter>
-<var name="${index}">39</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.507" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.507" endtime="20240323 19:15:50.507"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.507" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.507" endtime="20240323 19:15:50.507"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.507" endtime="20240323 19:15:50.507"/>
-</iter>
-<iter>
-<var name="${index}">40</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.508" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.508" endtime="20240323 19:15:50.508"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.508" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.508" endtime="20240323 19:15:50.508"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.507" endtime="20240323 19:15:50.509"/>
-</iter>
-<iter>
-<var name="${index}">41</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.509" level="INFO">${char} = n</msg>
-<status status="PASS" starttime="20240323 19:15:50.509" endtime="20240323 19:15:50.509"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.509" level="INFO">n</msg>
-<status status="PASS" starttime="20240323 19:15:50.509" endtime="20240323 19:15:50.509"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.509" endtime="20240323 19:15:50.509"/>
-</iter>
-<iter>
-<var name="${index}">42</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.510" level="INFO">${char} = t</msg>
-<status status="PASS" starttime="20240323 19:15:50.509" endtime="20240323 19:15:50.510"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.510" level="INFO">t</msg>
-<status status="PASS" starttime="20240323 19:15:50.510" endtime="20240323 19:15:50.510"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.509" endtime="20240323 19:15:50.510"/>
-</iter>
-<iter>
-<var name="${index}">43</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.510" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.510" endtime="20240323 19:15:50.510"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.510" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.510" endtime="20240323 19:15:50.510"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.510" endtime="20240323 19:15:50.510"/>
-</iter>
-<iter>
-<var name="${index}">44</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.511" level="INFO">${char} = n</msg>
-<status status="PASS" starttime="20240323 19:15:50.511" endtime="20240323 19:15:50.511"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.511" level="INFO">n</msg>
-<status status="PASS" starttime="20240323 19:15:50.511" endtime="20240323 19:15:50.511"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.511" endtime="20240323 19:15:50.511"/>
-</iter>
-<iter>
-<var name="${index}">45</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.511" level="INFO">${char} = c</msg>
-<status status="PASS" starttime="20240323 19:15:50.511" endtime="20240323 19:15:50.511"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.512" level="INFO">c</msg>
-<status status="PASS" starttime="20240323 19:15:50.512" endtime="20240323 19:15:50.512"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.511" endtime="20240323 19:15:50.512"/>
-</iter>
-<iter>
-<var name="${index}">46</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.512" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.512" endtime="20240323 19:15:50.512"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.512" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.512" endtime="20240323 19:15:50.512"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.512" endtime="20240323 19:15:50.512"/>
-</iter>
-<iter>
-<var name="${index}">47</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.513" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.512" endtime="20240323 19:15:50.513"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.513" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.513" endtime="20240323 19:15:50.513"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.512" endtime="20240323 19:15:50.513"/>
-</iter>
-<iter>
-<var name="${index}">48</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.513" level="INFO">${char} = .</msg>
-<status status="PASS" starttime="20240323 19:15:50.513" endtime="20240323 19:15:50.513"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.513" level="INFO">.</msg>
-<status status="PASS" starttime="20240323 19:15:50.513" endtime="20240323 19:15:50.513"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.513" endtime="20240323 19:15:50.513"/>
-</iter>
-<iter>
-<var name="${index}">49</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.514" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.514" endtime="20240323 19:15:50.514"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.514" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.514" endtime="20240323 19:15:50.514"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.514" endtime="20240323 19:15:50.514"/>
-</iter>
-<iter>
-<var name="${index}">50</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.514" level="INFO">${char} = I</msg>
-<status status="PASS" starttime="20240323 19:15:50.514" endtime="20240323 19:15:50.514"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.515" level="INFO">I</msg>
-<status status="PASS" starttime="20240323 19:15:50.514" endtime="20240323 19:15:50.515"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.514" endtime="20240323 19:15:50.515"/>
-</iter>
-<iter>
-<var name="${index}">51</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.515" level="INFO">${char} = t</msg>
-<status status="PASS" starttime="20240323 19:15:50.515" endtime="20240323 19:15:50.515"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.515" level="INFO">t</msg>
-<status status="PASS" starttime="20240323 19:15:50.515" endtime="20240323 19:15:50.515"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.515" endtime="20240323 19:15:50.515"/>
-</iter>
-<iter>
-<var name="${index}">52</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.516" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.515" endtime="20240323 19:15:50.516"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.516" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.516" endtime="20240323 19:15:50.516"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.515" endtime="20240323 19:15:50.516"/>
-</iter>
-<iter>
-<var name="${index}">53</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.516" level="INFO">${char} = d</msg>
-<status status="PASS" starttime="20240323 19:15:50.516" endtime="20240323 19:15:50.516"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.516" level="INFO">d</msg>
-<status status="PASS" starttime="20240323 19:15:50.516" endtime="20240323 19:15:50.517"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.516" endtime="20240323 19:15:50.517"/>
-</iter>
-<iter>
-<var name="${index}">54</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.517" level="INFO">${char} = o</msg>
-<status status="PASS" starttime="20240323 19:15:50.517" endtime="20240323 19:15:50.517"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.517" level="INFO">o</msg>
-<status status="PASS" starttime="20240323 19:15:50.517" endtime="20240323 19:15:50.517"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.517" endtime="20240323 19:15:50.517"/>
-</iter>
-<iter>
-<var name="${index}">55</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.517" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.517" endtime="20240323 19:15:50.518"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.518" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.518" endtime="20240323 19:15:50.518"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.517" endtime="20240323 19:15:50.518"/>
-</iter>
-<iter>
-<var name="${index}">56</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.518" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.518" endtime="20240323 19:15:50.518"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.518" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.518" endtime="20240323 19:15:50.518"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.518" endtime="20240323 19:15:50.518"/>
-</iter>
-<iter>
-<var name="${index}">57</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.519" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.518" endtime="20240323 19:15:50.519"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.519" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.519" endtime="20240323 19:15:50.519"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.518" endtime="20240323 19:15:50.519"/>
-</iter>
-<iter>
-<var name="${index}">58</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.519" level="INFO">${char} = n</msg>
-<status status="PASS" starttime="20240323 19:15:50.519" endtime="20240323 19:15:50.519"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.519" level="INFO">n</msg>
-<status status="PASS" starttime="20240323 19:15:50.519" endtime="20240323 19:15:50.520"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.519" endtime="20240323 19:15:50.520"/>
-</iter>
-<iter>
-<var name="${index}">59</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.520" level="INFO">${char} = o</msg>
-<status status="PASS" starttime="20240323 19:15:50.520" endtime="20240323 19:15:50.520"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.520" level="INFO">o</msg>
-<status status="PASS" starttime="20240323 19:15:50.520" endtime="20240323 19:15:50.520"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.520" endtime="20240323 19:15:50.520"/>
-</iter>
-<iter>
-<var name="${index}">60</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.520" level="INFO">${char} = t</msg>
-<status status="PASS" starttime="20240323 19:15:50.520" endtime="20240323 19:15:50.520"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.521" level="INFO">t</msg>
-<status status="PASS" starttime="20240323 19:15:50.521" endtime="20240323 19:15:50.521"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.520" endtime="20240323 19:15:50.521"/>
-</iter>
-<iter>
-<var name="${index}">61</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.521" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.521" endtime="20240323 19:15:50.521"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.521" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.521" endtime="20240323 19:15:50.521"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.521" endtime="20240323 19:15:50.521"/>
-</iter>
-<iter>
-<var name="${index}">62</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.522" level="INFO">${char} = h</msg>
-<status status="PASS" starttime="20240323 19:15:50.521" endtime="20240323 19:15:50.522"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.522" level="INFO">h</msg>
-<status status="PASS" starttime="20240323 19:15:50.522" endtime="20240323 19:15:50.522"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.521" endtime="20240323 19:15:50.522"/>
-</iter>
-<iter>
-<var name="${index}">63</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.522" level="INFO">${char} = a</msg>
-<status status="PASS" starttime="20240323 19:15:50.522" endtime="20240323 19:15:50.522"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.522" level="INFO">a</msg>
-<status status="PASS" starttime="20240323 19:15:50.522" endtime="20240323 19:15:50.522"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.522" endtime="20240323 19:15:50.523"/>
-</iter>
-<iter>
-<var name="${index}">64</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.523" level="INFO">${char} = v</msg>
-<status status="PASS" starttime="20240323 19:15:50.523" endtime="20240323 19:15:50.523"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.523" level="INFO">v</msg>
-<status status="PASS" starttime="20240323 19:15:50.523" endtime="20240323 19:15:50.523"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.523" endtime="20240323 19:15:50.523"/>
-</iter>
-<iter>
-<var name="${index}">65</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.523" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.523" endtime="20240323 19:15:50.524"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.524" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.524" endtime="20240323 19:15:50.524"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.523" endtime="20240323 19:15:50.524"/>
-</iter>
-<iter>
-<var name="${index}">66</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.524" level="INFO">${char} =  </msg>
-<status status="PASS" starttime="20240323 19:15:50.524" endtime="20240323 19:15:50.524"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.524" level="INFO"> </msg>
-<status status="PASS" starttime="20240323 19:15:50.524" endtime="20240323 19:15:50.524"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.524" endtime="20240323 19:15:50.524"/>
-</iter>
-<iter>
-<var name="${index}">67</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.525" level="INFO">${char} = n</msg>
-<status status="PASS" starttime="20240323 19:15:50.524" endtime="20240323 19:15:50.525"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.525" level="INFO">n</msg>
-<status status="PASS" starttime="20240323 19:15:50.525" endtime="20240323 19:15:50.525"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.524" endtime="20240323 19:15:50.525"/>
-</iter>
-<iter>
-<var name="${index}">68</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.525" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.525" endtime="20240323 19:15:50.525"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.525" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.525" endtime="20240323 19:15:50.525"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.525" endtime="20240323 19:15:50.525"/>
-</iter>
-<iter>
-<var name="${index}">69</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.526" level="INFO">${char} = w</msg>
-<status status="PASS" starttime="20240323 19:15:50.526" endtime="20240323 19:15:50.526"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.526" level="INFO">w</msg>
-<status status="PASS" starttime="20240323 19:15:50.526" endtime="20240323 19:15:50.526"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.526" endtime="20240323 19:15:50.526"/>
-</iter>
-<iter>
-<var name="${index}">70</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.526" level="INFO">${char} = l</msg>
-<status status="PASS" starttime="20240323 19:15:50.526" endtime="20240323 19:15:50.526"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.527" level="INFO">l</msg>
-<status status="PASS" starttime="20240323 19:15:50.526" endtime="20240323 19:15:50.527"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.526" endtime="20240323 19:15:50.527"/>
-</iter>
-<iter>
-<var name="${index}">71</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.527" level="INFO">${char} = i</msg>
-<status status="PASS" starttime="20240323 19:15:50.527" endtime="20240323 19:15:50.527"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.527" level="INFO">i</msg>
-<status status="PASS" starttime="20240323 19:15:50.527" endtime="20240323 19:15:50.527"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.527" endtime="20240323 19:15:50.527"/>
-</iter>
-<iter>
-<var name="${index}">72</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.528" level="INFO">${char} = n</msg>
-<status status="PASS" starttime="20240323 19:15:50.527" endtime="20240323 19:15:50.528"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.528" level="INFO">n</msg>
-<status status="PASS" starttime="20240323 19:15:50.528" endtime="20240323 19:15:50.528"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.527" endtime="20240323 19:15:50.528"/>
-</iter>
-<iter>
-<var name="${index}">73</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.528" level="INFO">${char} = e</msg>
-<status status="PASS" starttime="20240323 19:15:50.528" endtime="20240323 19:15:50.528"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.528" level="INFO">e</msg>
-<status status="PASS" starttime="20240323 19:15:50.528" endtime="20240323 19:15:50.528"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.528" endtime="20240323 19:15:50.528"/>
-</iter>
-<iter>
-<var name="${index}">74</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.529" level="INFO">${char} = s</msg>
-<status status="PASS" starttime="20240323 19:15:50.529" endtime="20240323 19:15:50.529"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.529" level="INFO">s</msg>
-<status status="PASS" starttime="20240323 19:15:50.529" endtime="20240323 19:15:50.529"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.528" endtime="20240323 19:15:50.529"/>
-</iter>
-<iter>
-<var name="${index}">75</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${char}</var>
-<arg>${STRING[${index}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20240323 19:15:50.529" level="INFO">${char} = .</msg>
-<status status="PASS" starttime="20240323 19:15:50.529" endtime="20240323 19:15:50.529"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${char}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.530" level="INFO">.</msg>
-<status status="PASS" starttime="20240323 19:15:50.529" endtime="20240323 19:15:50.530"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.529" endtime="20240323 19:15:50.530"/>
-</iter>
-<status status="PASS" starttime="20240323 19:15:50.480" endtime="20240323 19:15:50.530"/>
-</for>
-<kw name="Test End" type="TEARDOWN">
-<kw name="Log" library="BuiltIn">
-<arg>Ending test case,${ROBOT},Running on,${HOST}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240323 19:15:50.530" level="INFO">Ending test case,Robot Framework 4.1.3 (Python 2.7.18 on darwin),Running on,Srinaths-MacBook-Air.local</msg>
-<status status="PASS" starttime="20240323 19:15:50.530" endtime="20240323 19:15:50.530"/>
-</kw>
-<status status="PASS" starttime="20240323 19:15:50.530" endtime="20240323 19:15:50.530"/>
-</kw>
-<doc>Verify list of characters from a String</doc>
-<status status="PASS" starttime="20240323 19:15:50.046" endtime="20240323 19:15:50.530"/>
-</test>
-<status status="PASS" starttime="20240323 19:15:47.494" endtime="20240323 19:15:50.530"/>
-</suite>
-<status status="PASS" starttime="20240323 19:15:47.494" endtime="20240323 19:15:50.531"/>
-</suite>
-<status status="PASS" starttime="20240323 19:15:47.483" endtime="20240323 19:15:50.532"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="GitHubTraining">GitHubTraining</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot Scripting">GitHubTraining.Robot Scripting</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Main">GitHubTraining.Robot Scripting.Main</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<status status="PASS" start="2024-06-08T20:46:14.821824" elapsed="0.475162"/>
