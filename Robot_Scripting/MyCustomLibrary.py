@@ -1,4 +1,5 @@
 # MyCustomLibrary.py
+from robot import run
 
 class MyCustomLibrary:
     def __init__(self):

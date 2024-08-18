@@ -1,4 +1,6 @@
 *** Settings ***
+Suite Setup       Suite Start
+Suite Teardown    Suite End
 Test Setup        Test Start
 Test Teardown     Test End
 Library           String
@@ -35,6 +37,7 @@ TestCase_01
     ${lowercase} =    Convert To Lower Case   ${String}
 
 
+
 *** Keywords ***
 Test Start
     ${robotversion} =    Run    robot --version
@@ -44,3 +47,16 @@ Test Start
 
 Test End
     Log    Ending test case,${ROBOT},Running on,${HOST}
+
+Receive dictionary
+    [Arguments]    ${dict}
+    log    ${dict}
+    &{dict}=    Create Dictionary    A=1
+    RETURN   &{dict}
+
+Suite Start
+    log    "Suite Setup"
+
+Suite End
+    log    "Suite End"
+    
