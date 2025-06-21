@@ -1,0 +1,14 @@
+case objective "foo \"bar\" baz"
+case objective "foo ‘bar’ baz"
+
+case objective "foo \"bar\" \"baz\""
+case objective "foo ‘bar’ ‘baz’"
+
+case objective "foo \"bar \\\"baz\\\"\""
+case objective "foo ‘bar \\\"baz\\“’"
+
+case objective "foo \"\" \"bar\""
+case objective "foo ‘’ ‘bar’"
+
+case objective "foo \"bar \\\"baz\\\"\" \"qux\""
+case objective "foo ‘bar \\\"baz\\“’ ‘qux’"

@@ -1,0 +1,23 @@
+case objective "This is a test"
+"This is a multiline test
+that spans multiple lines
+with quotes."
+
+case objective "First line"
+"Second line"
+"Third line"
+
+case objective "Line one"
+"Line two with a quote \"inside\""
+"Line three"
+
+case objective "Just one quoted value"
+"Only this one"
+
+case objective "Multiple lines with no quotes"
+This line has no quotes
+And this line also has none
+
+case objective "Quotes at the end"
+"Last line with quotes"
+"Another quoted value"

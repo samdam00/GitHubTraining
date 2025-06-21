@@ -1,0 +1,9 @@
+case objective “foo” “bar” “baz”
+case objective “hello” “world”
+case objective “café” “déjà vu”
+case objective “quote with emoji 😊” “another quote”
+case objective “nested “quotes” inside” “should be handled”
+case objective “unicode ‘single quotes’ and “double quotes””
+case objective “mixed quotes ‘and’ “unicode””
+case objective ““double quotes” at the start and ‘single quotes’ at the end”
+case objective ““curly quotes” ‘should’ be replaced”

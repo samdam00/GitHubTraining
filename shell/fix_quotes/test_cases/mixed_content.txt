@@ -1,0 +1,15 @@
+case objective "This is a test with \"escaped quotes\" and should remain unchanged."
+case objective "Another test with 'single quotes' and \"double quotes\"."
+case objective "Mixed content with \"quotes\" and unquoted text."
+case objective "Just a single quoted value"
+case objective "Multiple quoted values: \"first\", \"second\", and \"third\"."
+case objective "No quotes here, just plain text."
+case objective "Quotes at the start: \"start\" and at the end: \"end\"."
+case objective "Quotes with special characters: \"!@#$%^&*()\" and '[]{}|'."
+case objective "A mix of quoted and unquoted lines:
+line one
+case objective \"foo\" \"bar\"
+line two"
+case objective "Quotes with newlines:
+\"This is a test
+that spans multiple lines\"."

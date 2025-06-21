@@ -4,6 +4,7 @@ Suite Teardown    Suite End
 Test Setup        Test Start
 Test Teardown     Test End
 Library           String
+Library           Collections
 Library           SeleniumLibrary
 Library           OperatingSystem
 Library           AppiumLibrary
@@ -22,6 +23,9 @@ ${STRING}         This is a long string.    It has multiple sentences.    It doe
 ${MULTILINE}      SEPARATOR=\n    This is a long multiline string.    This is the second line.    This is the third and the last line.
 @{LIST}           this    list    is    quite    long    and    items in it can also be long
 &{DICT}           first=This value is pretty long.    second=This value is even longer. It has two sentences.
+&{DictionaryList}     A=${{["StringA1","StringA2"]}}    B=${{["StringB1","StringB2"]}}
+&{outer_dict}    key1=${{'nested_key1': value1 , 'nested_key2': value2}}    key2=${{'nested_key3': value3}}
+
 *** Test Cases ***
 TestCase_01
     [Documentation]    Verify operations on the string
@@ -35,10 +39,31 @@ TestCase_01
     END
     #convert to lower case
     ${lowercase} =    Convert To Lower Case   ${String}
+    #Dict of Lists
+    Process DictionaryofList    ${DictionaryList}
+    #Dict of Dict
+    Process DictionaryofDict    &{outer_dict}
 
+
+    
 
 
 *** Keywords ***
+
+Process DictionaryofList
+    [Arguments]    ${dict}
+    FOR    ${key}    IN    @{dict.keys()}
+        ${Value} =    Set Variable    ${dict.${key}}[0]
+        Log    ${Value}
+    END
+
+Process DictionaryofDict
+    [Arguments]    ${dict}
+    FOR    ${key}    IN    @{dict.keys()}
+        ${Value} =    Set Variable    ${dict.${key}}
+        Log    ${Value}
+    END
+
 Test Start
     ${robotversion} =    Run    robot --version
     Set Global Variable    ${ROBOT}    ${robotversion}
@@ -47,12 +72,6 @@ Test Start
 
 Test End
     Log    Ending test case,${ROBOT},Running on,${HOST}
-
-Receive dictionary
-    [Arguments]    ${dict}
-    log    ${dict}
-    &{dict}=    Create Dictionary    A=1
-    RETURN   &{dict}
 
 Suite Start
     log    "Suite Setup"

@@ -1,0 +1,5 @@
+case objective "foo" "bar" "baz"
+case objective "single value"
+case objective "another example"
+case objective "test with no quotes"
+case objective "just text without quotes"
