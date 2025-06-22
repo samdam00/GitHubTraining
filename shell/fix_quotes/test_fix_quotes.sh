@@ -15,10 +15,18 @@
 # Usage:
 #   ./test_fix_quotes.sh
 #
-# Each test creates a temporary file with input content, runs fix_quotes.sh
-# on it, and compares the output to the expected result. Pass/fail counts
-# are displayed at the end, and the script exits with a nonzero status if
-# any test fails.
+# By default, this script suppresses errors and output from fix_quotes.sh.
+#
+# To see errors and output from fix_quotes.sh during testing,
+# edit the run_test function and remove the following redirection:
+#     > /dev/null 2>&1
+#
+# Example:
+# Change this line:
+#     (cd "$(dirname "$tmpfile")" && bash "$FIX_QUOTES" > /dev/null 2>&1)
+# To:
+#     (cd "$(dirname "$tmpfile")" && bash "$FIX_QUOTES")
+#
 ###############################################################################
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

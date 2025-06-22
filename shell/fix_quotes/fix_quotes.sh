@@ -39,8 +39,8 @@
 #
 # Notes:
 #   - Only processes `case objective` blocks with at least two quotes.
-#   - Leaves blocks with an odd number of quotes or less than two quotes unchanged.
-#   - Backs up nothing; original files are overwritten.
+#   - Leaves blocks with an odd number of quotes or fewer than two quotes unchanged.
+#   - Does not create backups; original files are overwritten.
 ###############################################################################
 
 process_block() {

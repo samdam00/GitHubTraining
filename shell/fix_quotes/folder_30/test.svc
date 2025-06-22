@@ -1,4 +1,4 @@
-                                case objective      "some text ‘comment's’ end some 
+                                case objective      "some text "comment's" end some 
                                 ...
                                 ...
                                 text"
@@ -6,166 +6,166 @@
     set "one"
     Ensure
     verify "one"
-    case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ ....endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text"
+    case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" ....endsome text "ooo" end"
+case objective "some text "ooo" end some text"
 case objective "
-    some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ .endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
-    endsome text ‘ooo’ endsome text ‘ooo’ endsome text ‘ooo’ 
+    some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" .endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" end"
+case objective "some text "ooo" end some text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
+    endsome text "ooo" endsome text "ooo" endsome text "ooo" 
     
     
     
     
-    (endsome) text ‘ooo’ end"
-case objective "some text ‘ooo’ end some text this is the end +/-:"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-case objective "some text ‘ooo’ end some text"
-            case objective      "some text ‘ooo’ end some text"
+    (endsome) text "ooo" end"
+case objective "some text "ooo" end some text this is the end +/-:"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+case objective "some text "ooo" end some text"
+            case objective      "some text "ooo" end some text"
