@@ -63,7 +63,9 @@ process_block() {
     fi
 }
 
-find . -type f -name "*.svc" | while read -r file; do
+mkdir -p modified
+
+find . -type f -name "*.svc" | while IFS= read -r file; do
     tmp_file=$(mktemp)
     inside_block=0
     block=""
@@ -93,6 +95,25 @@ find . -type f -name "*.svc" | while read -r file; do
         echo "$block" >> "$tmp_file"
     fi
 
-    mv "$tmp_file" "$file"
-    echo "Updated: $file"
+    # Only write to modified/ if changes are present
+    mod_path="modified/${file#./}"
+
+    # Normalize both files for comparison (strip trailing whitespace, ignore blank lines at EOF)
+    orig_norm=$(mktemp)
+    proc_norm=$(mktemp)
+    sed -e 's/[[:space:]]\+$//' "$file" | awk 'NF || NR==1' > "$orig_norm"
+    sed -e 's/[[:space:]]\+$//' "$tmp_file" | awk 'NF || NR==1' > "$proc_norm"
+
+    if ! cmp -s "$orig_norm" "$proc_norm"; then
+        mkdir -p "$(dirname "$mod_path")"
+        mv "$tmp_file" "$mod_path"
+        echo "Modified: $mod_path"
+    else
+        rm "$tmp_file"
+        # Remove any stale file in modified/ if present
+        if [ -f "$mod_path" ]; then
+            rm "$mod_path"
+        fi
+    fi
+    rm -f "$orig_norm" "$proc_norm"
 done
