@@ -1,0 +1,48 @@
+#define Macro1(param1,param2,param3)\
+memcpy(1,2)
+memcpy(1,2)
+memcpy(1,2)
+memcpy(1,2)
+memcpy(1,2)
+
+#define Macro2(param1,param2,param3)\
+Void{
+    memcpy(1,2)
+    memcpy(1,2)
+    memcpy(1,2)
+    memcpy(1,2)
+    memcpy(1,2)
+}
+
+#define Macro3(param1,param2,param3)\
+If{
+memcpy(1,2)
+memcpy(1,2)
+memcpy(1,2)
+memcpy(1,2)
+}
+
+#define Macro4(param1,param2,param3)\
+\
+tmp_1_2(##param1,param2.oo->mot_##ooo,param3)
+
+
+#define Macro5(param1,param2,param3)\
+/*comment */
+If{
+memcpy(1,2)
+memcpy(1,2)
+memcpy(1,2)
+memcpy(1,2)
+}
+
+#define Macro6(param1,param2,param3)
+
+
+#define Macro7(param1,param2,param3)\
+\
+tmp_1_2(##param1,param2.oo->mot_##ooo,param3)
+
+#define Macro8(param1,param2,param3)
+\
+tmp_1_2(##param1,param2.oo->mot_##ooo,param3)
