@@ -37,45 +37,67 @@ find . -type f -name "*.codda" | while read -r file; do
     unexpanded_out="unexpanded_macros_${out_suffix}.txt"
 
     awk -v expanded="$expanded_out" -v unexpanded="$unexpanded_out" '
-    # Helper function to trim whitespace (not used in logic, but available)
     function trim(s) { sub(/^[ \t]+/, "", s); sub(/[ \t]+$/, "", s); return s }
-    BEGIN { macro_name = ""; code_found = 0 }
+    BEGIN { macro_name = ""; code_found = 0; in_macro = 0; macro_buffer = "" }
+    # Ignore commented-out #define lines
+    /^[ \t]*\/\// { next }
+    /^[ \t]*#/ && $0 !~ /^[ \t]*#define/ { next }
     # Detect macro definition lines
-    /^\s*#define/ {
-        if (macro_name != "") {
-            # Output previous macro before processing new one
-            if (code_found) {
-                print macro_name >> expanded
-            } else {
-                print macro_name >> unexpanded
-            }
+    /^[ \t]*#define[ \t]+/ {
+        # Output previous macro if any
+        if (in_macro && macro_name != "") {
+            if (code_found) print macro_name >> expanded;
+            else print macro_name >> unexpanded;
         }
-        # Start new macro: extract macro name
-        line = $0
-        sub(/^\s*#define[ \t]+/, "", line)
-        split(line, arr, /[ \t\(]/)
-        macro_name = arr[1]
-        code_found = 0
-        next
+        # Start new macro
+        macro_buffer = $0;
+        in_macro = 1;
+        code_found = 0;
+        # Remove #define and leading whitespace
+        line = $0;
+        sub(/^[ \t]*#define[ \t]+/, "", line);
+        # Extract macro name (handles parameters)
+        if (match(line, /^([A-Za-z_][A-Za-z0-9_]*)/, arr)) {
+            macro_name = arr[1];
+        } else {
+            macro_name = "";
+        }
+        # Check if macro continues to next line
+        if ($0 ~ /\\[ \t]*$/) next;
+        # Otherwise, process macro body
+        macro_body = line;
+        sub(/^[A-Za-z_][A-Za-z0-9_]*[ \t]*(\(.*\))?[ \t]*/, "", macro_body);
+        if (macro_body ~ /[^ \t]/) code_found = 1;
+        in_macro = 0;
+        next;
     }
-    {
-        # For lines after #define, check if there is code (non-empty, non-comment, non-preprocessor)
-        if (macro_name != "" && code_found == 0) {
-            if ($0 ~ /^[ \t]*$/ || $0 ~ /^\/\// || $0 ~ /^#/) {
-                next
-            } else {
-                code_found = 1
+    # Handle continuation lines for macros
+    in_macro && /\\[ \t]*$/ {
+        macro_buffer = macro_buffer "\n" $0;
+        next;
+    }
+    in_macro {
+        macro_buffer = macro_buffer "\n" $0;
+        # Check for code in continuation lines (ignore comments and empty lines)
+        line = $0;
+        gsub(/\/\*.*\*\//, "", line); # Remove block comments
+        gsub(/\/\/.*$/, "", line);    # Remove line comments
+        if (line ~ /[^ \t\\]/) code_found = 1;
+        # If this is the last line of the macro (no trailing backslash)
+        if ($0 !~ /\\[ \t]*$/) {
+            if (macro_name != "") {
+                if (code_found) print macro_name >> expanded;
+                else print macro_name >> unexpanded;
             }
+            in_macro = 0;
         }
+        next;
     }
     END {
-        # Output last macro at end of file
-        if (macro_name != "") {
-            if (code_found) {
-                print macro_name >> expanded
-            } else {
-                print macro_name >> unexpanded
-            }
+        # Output last macro if file ends during macro
+        if (in_macro && macro_name != "") {
+            if (code_found) print macro_name >> expanded;
+            else print macro_name >> unexpanded;
         }
     }
     ' "$file"
